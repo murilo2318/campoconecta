@@ -15,7 +15,7 @@ Legenda: ✅ evidência local disponível para o item, 🟡 parcial, ⬜ pendent
 | Uso dos temas | 30% | Pelo menos 3 temas da disciplina, cada um com função real no fluxo, e quadro de temas no README | ✅ 4 temas em uso (Pandas, API ViaCEP, SQL, e-mail); quadro no README, seção 4 | `backend/app/pipelines/rpa/`, `providers/` |
 | Funcionamento ponta a ponta | 25% | Entrada, processamento com IA e saída em execução contínua; README permite rodar sem ajuda | ✅ | `backend/rpa_run.py` |
 | Resiliência e segurança | 20% | Exceções tratadas, dados inválidos, caminho seguro, log, chaves fora do código | ✅ | `robo.py`, `viacep.py`, `.env.example` |
-| Evidências de validação | 15% | Execução com dados de teste, resultado medido em amostra, pelo menos 1 caso de falha tratado e demonstrado | 🟡 60 rótulos revisados e regras medidas: tipo/urgência 100%/90%, 100%/95% e 55%/30% nos três conjuntos. RPA: 52 processadas, 3 rejeitadas, 0 falhas; gravação local RPA pronta, link público pendente. Medição Gemini não realizada | `backend/avaliar.py`, `data/casos_teste.csv` |
+| Evidências de validação | 15% | Execução com dados de teste, resultado medido em amostra, pelo menos 1 caso de falha tratado e demonstrado | 🟡 60 rótulos revisados e regras medidas: tipo/urgência 100%/90%, 100%/95% e 55%/30% nos três conjuntos. RPA: 52 processadas, 3 rejeitadas, 0 falhas; gravação local RPA pronta, arquivo público no repositório; formato de link a confirmar no Portal. Medição Gemini não realizada | `backend/avaliar.py`, `data/casos_teste.csv` |
 | Dados, ética, ODS e organização | 10% | Parágrafo sobre proteção de dados, ética e ODS; entrega organizada e no prazo | 🟡 Parágrafo escrito, medidas e limites declarados; envio no prazo ainda não comprovado | README, seção 7 |
 
 Regras do enunciado: LLM é opcional; só dados sintéticos ou públicos; nenhuma chave no repositório; ponto de entrada claro.
@@ -30,11 +30,11 @@ Em aberto para o grupo: tema de scraping (opcional), uso de LLM real (precisa de
 | Arquitetura | 2,0 | Front e back separados, camadas `features/ ui/ state/ providers/` e `routers/ schemas/ pipelines/ providers/` | ✅ | `frontend/`, `backend/app/` |
 | Estado, performance, robustez | 1,5 | `session_state`, `st.cache_data`, falhas tratadas, segredos fora do repo, CORS restrito | ✅ | `state/store.py`, `main.py` |
 | UX/UI, acessibilidade, visualização | 2,0 | Layout, latência, cores com texto ou ícone, human-in-the-loop, gráfico Plotly, 2 filtros, componente reutilizável | ✅ | `ui/`, `features/gestor.py` |
-| Deploy e repositório | 1,0 | Deploy público ou Docker, README completo, requirements por serviço, `.env.example` | 🟡 Docker build e saúde da API/interface verificados em 10/11/2026; README atualizado. Repositório público pendente de autenticação/publicação | `docker-compose.yml` |
+| Deploy e repositório | 1,0 | Deploy público ou Docker, README completo, requirements por serviço, `.env.example` | 🟡 Docker build e saúde da API/interface verificados em 10/11/2026; README atualizado. Repositório público criado e código publicado no GitHub | `docker-compose.yml` |
 | Justificativa, validação, impacto | 1,5 | Problema e público com fonte, 1 ou 2 ODS, decisões técnicas, ética e limites da IA, teste com pelo menos 3 pessoas com um ajuste, tabela com pelo menos 3 casos de teste da IA | 🟡 Problema, decisões, ética e métricas documentados; teste com três pessoas e ajuste motivado por feedback ainda pendentes | |
 
 Entregáveis: repositório público único, vídeo de até 5 min (demonstração, código, validação, um erro tratado), link no Portal.
-Em aberto: validação com três pessoas e ajuste a partir do feedback; publicação dos vídeos próprios já gravados e do repositório. Perfis com autenticação e deploy em plataforma permanecem diferenciais não comprovados. A correção técnica do gráfico de datas não conta como ajuste a partir de feedback humano.
+Em aberto: validação com três pessoas e ajuste a partir do feedback; confirmação no Portal do formato dos links dos vídeos próprios já gravados e publicados no repositório. Perfis com autenticação e deploy em plataforma permanecem diferenciais não comprovados. A correção técnica do gráfico de datas não conta como ajuste a partir de feedback humano.
 
 ### Cluster Computing (10,0 pontos)
 
@@ -75,6 +75,6 @@ Cada pasta em `entregas_externas/` (Visão, IoT, Quântica, Governança) tem um 
 
 - **Validação humana:** três participantes ainda precisam usar a tela e fornecer feedback real; não foram inventadas falas ou aprovações. Registrar o feedback e um ajuste decorrente dele continua obrigatório no roteiro recebido.
 - **Gemini:** chave/modelo e execução real ainda não confirmados; as métricas documentadas são de regras. LLM opcional no roteiro de RPA não transforma resultado de regras em medição de LLM.
-- **GitHub e vídeos:** integrantes/RMs já constam no README; links públicos continuam pendentes de autenticação/publicação. As gravações locais distintas de Front e RPA estão em docs/videos/.
+- **GitHub e vídeos:** integrantes/RMs já constam no README; repositório e arquivos de vídeos publicados em https://github.com/murilo2318/campoconecta . Confirmar formato aceito no Portal. As gravações distintas de Front e RPA estão em docs/videos/.
 - **Portal do Aluno:** não houve conferência autenticada nem envio comprovado a RPA, Front ou Cluster. Não marcar entrega concluída sem recibo do Portal.
 - **Fontes do roteiro:** a tabela resume os materiais recebidos no pacote. As exigências específicas de cada professor no Portal prevalecem quando forem conferidas.

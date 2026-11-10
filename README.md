@@ -3,8 +3,8 @@
 Protótipo da Global Solution 2026.2 (FIAP). O pequeno produtor relata um problema do campo (praga, clima extremo, falta de água, preço ruim, dificuldade com crédito ou seguro), a IA classifica o tipo e a urgência, uma pessoa da assistência técnica confere e um robô consolida os casos aprovados em um e-mail para o órgão ou a cooperativa responsável.
 
 > **Integrantes:** Pedro Leal Murad — RM565460; Murilo Benhossi — RM562358; Nicolas Lemos Ribeiro — RM553273.
-> **Repositório público:** publicação pendente de autenticação no GitHub.
-> **Vídeos de Front e RPA:** gravações locais prontas ([Front](docs/videos/front.mp4) e [RPA](docs/videos/rpa.mp4)); links públicos pendentes, um vídeo por disciplina.
+> **Repositório público:** [https://github.com/murilo2318/campoconecta](https://github.com/murilo2318/campoconecta).
+> **Vídeos de Front e RPA:** gravações locais prontas ([Front](docs/videos/front.mp4) e [RPA](docs/videos/rpa.mp4)); arquivos disponíveis neste repositório, um vídeo por disciplina; confirmar no Portal se esse formato de link é aceito.
 > **Execução:** Docker local validado; não há deploy público confirmado.
 
 Prazo informado pelo grupo: **19/11/2026 às 23h55**; meta interna: **18/11/2026**. A conferência dos campos e regras de envio no Portal do Aluno ainda está pendente.
@@ -159,12 +159,15 @@ data/ (dados sintéticos)   docs/ (requisitos e kit do Cluster)   entregas_exter
 ## 11. Situação da entrega
 
 - Integrantes e RMs preenchidos; métricas e limites registrados.
-- Repositório público: pendente de autenticação e confirmação de publicação. A revisão de arquivos a publicar deve excluir `.env`, bancos `*.db` e PDFs.
-- Vídeos próprios de Front e RPA: gravações locais distintas prontas, sem narração; links públicos pendentes. Front tem 2min52s, abaixo do limite de cinco minutos.
+- Repositório público: publicado em https://github.com/murilo2318/campoconecta. A revisão de arquivos a publicar deve excluir `.env`, bancos `*.db` e PDFs.
+- Vídeos próprios de Front e RPA: gravações locais distintas prontas, sem narração; arquivos disponíveis no repositório. Front tem 2min52s, abaixo do limite de cinco minutos.
 - Teste com três pessoas e ajuste a partir do feedback: pendentes de participação real.
 - Portal do Aluno: requisitos e envio de cada disciplina ainda precisam de conferência na sessão autenticada. Não há comprovação de submissão.
 
 
 ## Execução atualizada em 10/11/2026
 
-Backend: 33 testes aprovados. Frontend: 8 testes aprovados após corrigir o gráfico de datas mistas. Docker reconstruído e fluxo visual enviado/aprovado. [Relatório consolidado](docs/validacao/RELATORIO_EXECUCAO.md). [Relatório de Cluster](docs/cluster/RELATORIO_CLUSTER.md) (o PDF de quatro páginas acompanha o pacote local e fica fora do Git). [Vídeo Front](docs/videos/front.mp4) e [vídeo RPA](docs/videos/rpa.mp4), gravações distintas sem narração. Gemini, teste com 3 pessoas, publicação GitHub e conferência/submissão no Portal continuam pendentes.
+Backend: 33 testes aprovados. Frontend: 8 testes aprovados após corrigir o gráfico de datas mistas. Docker reconstruído e fluxo visual enviado/aprovado. [Relatório consolidado](docs/validacao/RELATORIO_EXECUCAO.md). [Relatório de Cluster](docs/cluster/RELATORIO_CLUSTER.md) (o PDF de quatro páginas acompanha o pacote local e fica fora do Git). [Vídeo Front](docs/videos/front.mp4) e [vídeo RPA](docs/videos/rpa.mp4), gravações distintas sem narração. Gemini, teste com 3 pessoas, conferência/submissão no Portal continuam pendentes. O repositório e os arquivos de vídeo foram publicados no GitHub.
+
+
+A lista atualizada de entregas ainda necessárias está em [PENDENCIAS.md](docs/PENDENCIAS.md).

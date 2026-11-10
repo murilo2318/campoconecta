@@ -35,13 +35,13 @@ Motor oficial iSPD2.0 com adaptador da API pública para o retorno exato0,001 MB
 - ../videos/front.mp4: gravação real,2min51,739s, abaixo de5min. Mostra erro de validação, envio, classificação, aprovação, métricas e código. Sem narração. O teste com pessoas ainda não integra a gravação.
 - ../videos/rpa.mp4: gravação distinta, execução real 41,975 s, via painel temporário que transmite a saída do comando no container e mostra linhas da quarentena. Sem narração. O painel de gravação é uma ferramenta temporária e não uma tela de produto.
 
-Os arquivos precisam ser publicados em link aceito pelos professores; o Portal ainda não foi consultado para confirmar hospedagem/formato.
+Os arquivos estão publicados no repositório GitHub. O Portal ainda precisa ser consultado para confirmar se esse formato de hospedagem/link é aceito.
 
 ## Pendências que exigem acesso ou pessoas reais
 
 1. Gemini: chave e modelo ausentes. A medição com LLM ainda não ocorreu.
 2. Teste com 3 pessoas: usuário confirmou disponibilidade; aguardamos P1/P2/P3 usarem a tela e enviarem comentários. Nenhum feedback foi inventado. O ajuste de datas resolve um bug técnico encontrado na automação e não é apresentado como ajuste derivado desse feedback.
-3. GitHub: sessão do navegador desconectada e credencial do gh inválida. Repositório local preparado, publicação pública depende do login do usuário. Nenhum push foi feito.
+3. GitHub: publicação autorizada e executada em 10/11/2026 em https://github.com/murilo2318/campoconecta . O acesso ao gh foi validado com rede disponível. Conferência prévia excluiu .env, bancos, PDFs e logs de configuração resolvida.
 4. Portal: login em https://on.fiap.com.br/ pendente; nenhum enunciado privado ou entrega foi conferido/submetido. Prazo informado pelo usuário:19/11 às 23h55; meta interna 18/11. Os requisitos locais não substituem confirmação no Portal.
 5. Capturas nativas Results/Resources do iSPD, conforme o limite acima.
 
