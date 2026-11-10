@@ -7,7 +7,7 @@ st.set_page_config(page_title="CampoConecta", page_icon="🌾", layout="wide")
 store.iniciar()
 
 st.title("🌾 CampoConecta · CitizenTech")
-st.caption("Relatos de pequenos produtores rurais (pragas, clima, água, preço e crédito), analisados por IA e conferidos por pessoas.")
+st.caption("Relatos de pequenos produtores rurais (pragas, clima, água, preço e crédito), classificados por inteligência artificial ou por regras automáticas e sempre conferidos por pessoas.")
 
 with st.sidebar:
     st.header("Como usar")

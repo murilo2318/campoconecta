@@ -17,6 +17,7 @@ def tela() -> None:
     except Exception as e:  # noqa: BLE001
         mostrar_erro(e)
         return
+    st.caption("Esta lista vale só enquanto a página estiver aberta. Guarde o protocolo de cada relato.")
     for i, rel in enumerate(meus):
         cartao_relato(rel, chave=f"h{i}")
     if len(meus) >= 2:
