@@ -3,10 +3,42 @@
   "metodo": "automacao_do_navegador",
   "participantes_entrevistados": 0,
   "perfis": [
-    {"id":"P1","rotulo":"Murilo","relato_id":"api-f15a4383","tipo":"agua_irrigacao","urgencia":"alta","feedback_tecnico":"util","historico_isolado":true},
-    {"id":"P2","rotulo":"Pedro","relato_id":"api-f48e53cf","tipo":"praga_doenca","urgencia":"media","feedback_tecnico":"util","historico_isolado":true,"envios_no_perfil":2},
-    {"id":"P3","rotulo":"Nicolas","relato_id":"api-6eb305de","tipo":"credito_seguro","urgencia":"alta","feedback_tecnico":"incorreta","historico_isolado":true,"observacao":"negacao de urgencia nao interpretada pelas regras"}
+    {
+      "id": "perfil_teste_1",
+      "rotulo": "Perfil de teste 1",
+      "relato_id": "api-f15a4383",
+      "tipo": "agua_irrigacao",
+      "urgencia": "alta",
+      "feedback_tecnico": "util",
+      "historico_isolado": true
+    },
+    {
+      "id": "perfil_teste_2",
+      "rotulo": "Perfil de teste 2",
+      "relato_id": "api-f48e53cf",
+      "tipo": "praga_doenca",
+      "urgencia": "media",
+      "feedback_tecnico": "util",
+      "historico_isolado": true,
+      "envios_no_perfil": 2
+    },
+    {
+      "id": "perfil_teste_3",
+      "rotulo": "Perfil de teste 3",
+      "relato_id": "api-6eb305de",
+      "tipo": "credito_seguro",
+      "urgencia": "alta",
+      "feedback_tecnico": "incorreta",
+      "historico_isolado": true,
+      "observacao": "negacao de urgencia nao interpretada pelas regras"
+    }
   ],
   "melhoria": "preservar rascunho e ocultar cartao anterior na tentativa invalida",
-  "testes_frontend": {"aprovados":9,"duracao_s":2.12}
+  "testes_frontend": {
+    "aprovados": 9,
+    "duracao_s": 2.12
+  },
+  "titulo": "Execução automatizada com perfis de teste",
+  "perfis_sao_pessoas_reais": false,
+  "cumpre_requisito_tres_participantes": false
 }

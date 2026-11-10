@@ -4,3 +4,7 @@ Depois da correção:
 ......... [100%]
 9 passed in 2.12s
 Conferência visual na imagem Docker reconstruída: CEP123 e descrição preservados; mensagem de validação exibida; cartão anterior ausente.
+
+Reverificação após remover nomes dos rótulos e separar a coleta de participantes:
+......... [100%]
+9 passed in 2.14s

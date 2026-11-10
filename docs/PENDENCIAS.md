@@ -9,11 +9,12 @@ Atualizado em 10/11/2026. Repositório público: https://github.com/murilo2318/c
 - Confirmar se o link do vídeo MP4 hospedado no GitHub é aceito ou se será necessário hospedar em outra plataforma.
 - Medir com Gemini se o grupo optar por usar LLM: configurar GEMINI_API_KEY e GEMINI_MODEL e rodar `python avaliar.py casos_novos_2`. Nos requisitos locais, LLM é opcional; confirmar no Portal. Não confundir os resultados atuais de regras com LLM.
 
-## Front-end
-- Avaliação automatizada de P1–Murilo, P2–Pedro e P3–Nicolas concluída em docs/VALIDACAO_FRONT.md, com correção de formulário e 9 testes aprovados. A coleta com os participantes ainda precisa ocorrer e ser registrada conforme docs/validacao/TESTE_COM_PESSOAS.md.
-- Implementar pelo menos uma melhoria rastreável a esse feedback e verificar de novo. O conserto técnico de datas não substitui esse requisito.
+## Front-end — ABERTO
+- **A PREENCHER:** realizar o teste com três pessoas reais e preencher a seção “Teste com participantes reais” de [docs/VALIDACAO_FRONT.md](VALIDACAO_FRONT.md), incluindo data, perfil, tarefas, falas, dificuldades e melhoria pedida. O item permanece aberto até essa tabela ser preenchida com dados de pessoas reais.
+- A execução automatizada com Perfil de teste 1, Perfil de teste 2 e Perfil de teste 3 já está documentada, com ajuste do CEP e nove testes aprovados. Esses perfis não são pessoas reais e não cumprem o requisito de três participantes.
+- Implementar pelo menos uma melhoria rastreável ao feedback dos participantes e verificar novamente. O ajuste técnico do CEP e o conserto de datas não substituem esse requisito.
 - Atualizar a evidência/vídeo após o ajuste, caso o fluxo ou os resultados mudem.
-- Conferir formato dos links e enviar pelo Portal. Vídeo atual:2min52s,sem narração.
+- Conferir formato dos links e enviar pelo Portal. Vídeo atual: 2min52s, sem narração.
 
 ## Cluster
 - Capturas nativas concluídas: Global/Results e Resources de 2 e 4 workers, com tempos conferidos. Resta conferir no Portal e enviar.

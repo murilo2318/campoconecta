@@ -17,3 +17,6 @@ Pergunte o que ficou confuso,o que faltou e qual mudança ajudaria. Registre pal
 |P3|Aguardando|Aguardando|Aguardando|
 
 Após os comentários, implementar uma melhoria rastreável ao feedback e verificar a tarefa novamente. A correção do gráfico encontrada pelo teste automatizado não será apresentada como se tivesse sido sugerida pelos participantes.
+
+
+Registro canônico da coleta: seção “Teste com participantes reais” em [../VALIDACAO_FRONT.md](../VALIDACAO_FRONT.md), atualmente **A PREENCHER**. Os perfis automatizados não são pessoas reais e não cumprem esse requisito.
