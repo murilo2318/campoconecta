@@ -1,0 +1,4 @@
+id_relato,data,cep,descricao,motivo
+3,2026-11-04 10:00,09015310,Linha repetida com o mesmo id da linha 3 no arquivo.,id duplicado
+51,2026-11-09 08:00,09015310,,descrição vazia ou curta
+52,data-quebrada,09015310,Geada forte no sítio Boa Vista com data inválida.,data inválida

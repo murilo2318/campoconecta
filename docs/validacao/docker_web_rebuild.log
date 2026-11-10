@@ -1,0 +1,111 @@
+ Image campoconecta-web Building 
+ Image campoconecta-api Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.27kB done
+#1 DONE 0.0s
+
+#2 [web internal] load build definition from Dockerfile
+#2 transferring dockerfile: 272B 0.0s done
+#2 DONE 0.0s
+
+#3 [api internal] load build definition from Dockerfile
+#3 transferring dockerfile: 350B 0.0s done
+#3 DONE 0.0s
+
+#4 [web internal] load metadata for docker.io/library/python:3.12-slim
+#4 ...
+
+#5 [auth] library/python:pull token for registry-1.docker.io
+#5 DONE 0.0s
+
+#4 [web internal] load metadata for docker.io/library/python:3.12-slim
+#4 DONE 1.2s
+
+#6 [api internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [web internal] load build context
+#7 transferring context: 10.92kB 0.0s done
+#7 DONE 0.0s
+
+#8 [web 1/5] FROM docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b
+#8 resolve docker.io/library/python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b 0.0s done
+#8 DONE 0.0s
+
+#9 [web 2/5] WORKDIR /app
+#9 CACHED
+
+#10 [web 3/5] COPY frontend/requirements.txt .
+#10 CACHED
+
+#11 [web 4/5] RUN pip install --no-cache-dir -r requirements.txt
+#11 CACHED
+
+#12 [api internal] load build context
+#12 transferring context: 41.02kB 0.0s done
+#12 DONE 0.0s
+
+#13 [api 3/8] COPY backend/requirements.txt .
+#13 CACHED
+
+#9 [api 2/5] WORKDIR /app
+#9 CACHED
+
+#14 [api 4/8] RUN pip install --no-cache-dir -r requirements.txt
+#14 CACHED
+
+#15 [web 5/5] COPY frontend/ .
+#15 DONE 0.1s
+
+#16 [api 5/8] COPY backend/ ./backend/
+#16 DONE 0.1s
+
+#17 [api 6/8] COPY data/ ./data/
+#17 DONE 0.0s
+
+#18 [web] exporting to image
+#18 exporting layers
+#18 ...
+
+#19 [api 7/8] COPY entregas_externas/ ./entregas_externas/
+#19 DONE 0.0s
+
+#20 [api 8/8] WORKDIR /app/backend
+#20 DONE 0.0s
+
+#18 [web] exporting to image
+#18 exporting layers 0.1s done
+#18 exporting manifest sha256:bef05d748693776785c53336a68f7672deb43c413ee60437f109b6e5f7a7ac19 done
+#18 exporting config sha256:e4cb0635bc3e583d086e4ee6976f203818f3f7b68c8d6f1099839e4e7367a235 done
+#18 exporting attestation manifest sha256:e2b00afda8a50eba818ab95b7064a2944a4a764b7704a771386af5a932b8282c done
+#18 exporting manifest list sha256:c9476e0339d244ddfaca22917b9a0cd3c86c155630b970d9a30da180755e6178 done
+#18 naming to docker.io/library/campoconecta-web:latest done
+#18 unpacking to docker.io/library/campoconecta-web:latest 0.1s done
+#18 DONE 0.2s
+
+#21 [web] resolving provenance for metadata file
+#21 DONE 0.0s
+
+#22 [api] exporting to image
+#22 exporting layers 0.1s done
+#22 exporting manifest sha256:fdb26f1af26a8ed0fcd106618e78f04fbed3f731f795335f89aaf9257e8cb2fb done
+#22 exporting config sha256:8b641e24b47a258f4defca32975197e179abcd9aea9f84f8c2c8eb53dab77726 done
+#22 exporting attestation manifest sha256:6528fedf1d140a0bb48e66d886804e649657f2be2ed285916be734e3f6f61428 0.0s done
+#22 exporting manifest list sha256:e0b4be7751c5d6569ffddb6ed4c681c3de9551049b0119cfa546bc55a68f1c66 done
+#22 naming to docker.io/library/campoconecta-api:latest done
+#22 unpacking to docker.io/library/campoconecta-api:latest 0.1s done
+#22 DONE 0.2s
+
+#23 [api] resolving provenance for metadata file
+#23 DONE 0.0s
+ Image campoconecta-api Built 
+ Image campoconecta-web Built 
+ Container campoconecta-api-1 Recreate 
+ Container campoconecta-api-1 Recreated 
+ Container campoconecta-web-1 Recreate 
+ Container campoconecta-web-1 Recreated 
+ Container campoconecta-api-1 Starting 
+ Container campoconecta-api-1 Started 
+ Container campoconecta-web-1 Starting 
+ Container campoconecta-web-1 Started 

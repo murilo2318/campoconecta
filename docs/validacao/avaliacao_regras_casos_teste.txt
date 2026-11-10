@@ -1,0 +1,26 @@
+
+== regras | n=20 | acerto tipo=100% | acerto urgência=90%
+                                          texto  tipo_esperado    tipo_obtido urgencia_esperada urg_obtida
+Quero informações sobre financiamento do Pronaf credito_seguro credito_seguro             baixa      media
+   Como contratar seguro para a lavoura de café credito_seguro credito_seguro             baixa      media
+
+Matriz de confusão (urgência):
+urg_obtida         alta  baixa  critica  media
+urgencia_esperada                             
+alta                  5      0        0      0
+baixa                 0      2        0      2
+critica               0      0        5      0
+media                 0      0        0      6
+
+== triar (LLM se houver, senão regras) | n=20 | acerto tipo=100% | acerto urgência=90%
+                                          texto  tipo_esperado    tipo_obtido urgencia_esperada urg_obtida
+Quero informações sobre financiamento do Pronaf credito_seguro credito_seguro             baixa      media
+   Como contratar seguro para a lavoura de café credito_seguro credito_seguro             baixa      media
+
+Matriz de confusão (urgência):
+urg_obtida         alta  baixa  critica  media
+urgencia_esperada                             
+alta                  5      0        0      0
+baixa                 0      2        0      2
+critica               0      0        5      0
+media                 0      0        0      6

@@ -1,0 +1,50 @@
+# Relatório da execução - CampoConecta v2
+
+Data: 10/11/2026. Base: CampoConecta_planoA_v2.zip fornecido pelo usuário. A v1 foi apenas diagnóstico e não é a entrega atualizada.
+
+## Execução confirmada
+
+- Python 3.12.6 em ambiente isolado; dependências dos dois serviços instaladas.
+- Backend: 33 testes aprovados; aviso de depreciação Starlette/httpx.
+- Frontend inicial: 7 aprovados. O fluxo real encontrou falha do gráfico temporal com datas de formatos mistos do lote e da API. Regressão reproduziu AttributeError: Can only use .dt accessor with datetimelike values. Correção normaliza datas com format="mixed", utc=True e errors="coerce". Datas inválidas ficam fora do gráfico.
+- Frontend após a correção: 8 testes aprovados (7 originais e 1 regressão). A regressão passou também na imagem Docker reconstruída.
+- Docker Compose: build e inicialização reais concluídos. API /health e interface /_stcore/health responderam HTTP 200. Não houve erro de build do projeto; o serviço Docker estava inicialmente desligado e foi iniciado.
+- RPA local sem rede/LLM: 55 linhas lidas, 52 processadas, 3 rejeitadas, 0 falhas de linha; 4,886 s, 0,094 s/relato e 36 casos para revisão humana.
+- RPA na gravação Docker com rede: 52 processadas, 3 rejeitadas, 0 falhas; 29 CEPs resolvidos, 12,149 s e 0,2336 s/relato. ViaCEP recusou outros CEPs e o fluxo continuou. Sem Gemini e sem SMTP; e-mail foi salvo em arquivo, não enviado. Essa medição difere da referência hipotética de 0,136 s usada no Cluster e da execução local sem rede.
+- Rejeições demonstradas: id duplicado, descrição vazia e data inválida (quarentena).
+- Fluxo visual real: entrada curta rejeitada com mensagem; relato sintético de bomba de irrigação recebido e classificado; acesso ao gestor, comentário e aprovação; filtro Aprovado confirmou o mesmo relato e comentário. Conferência API também retornou201 na criação e200 na aprovação.
+
+## Revisão dos 60 rótulos e medição
+
+Foram revisados 20 casos em cada um dos três CSVs. Somente as urgências dos casos 14 e 16 de casos_teste.csv foram corrigidas de média para baixa: informações Pronaf e contratação de seguro, sem dano/prazo declarado. Tipos e textos foram preservados. Os outros dois conjuntos não foram alterados. A revisão detalhada registra ambiguidades e não adapta os rótulos para favorecer as regras.
+
+|Conjunto|Acerto tipo|Acerto urgência|
+|---|---:|---:|
+|casos_teste (revisado)|100%|90%|
+|casos_novos|100%|95%|
+|casos_novos_2|55%|30%|
+
+Resultados somente com regras, Gemini explicitamente desativado. Não são resultados de LLM. O conjunto mais difícil evidencia limites de generalização; os exemplos não equivalem a validação com produtores reais.
+
+## Cluster
+
+Motor oficial iSPD2.0 com adaptador da API pública para o retorno exato0,001 MB.500 tarefas,136 MFlops/tarefa,1000 MFlops/worker,RoundRobin,100 Mbps e 1 ms, todas hipóteses declaradas. Dois workers: 34,003400s,250 tarefas por worker. Quatro: 17,005720s,125 por worker. Redução 49,988178%,speedup 1,999527. Relatório de 4 páginas, fontes, modelos, adaptador, logs, resultados por recurso e capturas das exportações HTML oficiais em ../cluster/. Captura da aba Resources nativa permanece pendente: a janela abriu, mas não foi controlável pela superfície de automação. Não foi apresentada exportação HTML como captura nativa.
+
+## Vídeos locais
+
+- ../videos/front.mp4: gravação real,2min51,739s, abaixo de5min. Mostra erro de validação, envio, classificação, aprovação, métricas e código. Sem narração. O teste com pessoas ainda não integra a gravação.
+- ../videos/rpa.mp4: gravação distinta, execução real 41,975 s, via painel temporário que transmite a saída do comando no container e mostra linhas da quarentena. Sem narração. O painel de gravação é uma ferramenta temporária e não uma tela de produto.
+
+Os arquivos precisam ser publicados em link aceito pelos professores; o Portal ainda não foi consultado para confirmar hospedagem/formato.
+
+## Pendências que exigem acesso ou pessoas reais
+
+1. Gemini: chave e modelo ausentes. A medição com LLM ainda não ocorreu.
+2. Teste com 3 pessoas: usuário confirmou disponibilidade; aguardamos P1/P2/P3 usarem a tela e enviarem comentários. Nenhum feedback foi inventado. O ajuste de datas resolve um bug técnico encontrado na automação e não é apresentado como ajuste derivado desse feedback.
+3. GitHub: sessão do navegador desconectada e credencial do gh inválida. Repositório local preparado, publicação pública depende do login do usuário. Nenhum push foi feito.
+4. Portal: login em https://on.fiap.com.br/ pendente; nenhum enunciado privado ou entrega foi conferido/submetido. Prazo informado pelo usuário:19/11 às 23h55; meta interna 18/11. Os requisitos locais não substituem confirmação no Portal.
+5. Capturas nativas Results/Resources do iSPD, conforme o limite acima.
+
+## Alterações do projeto
+
+frontend/ui/graficos.py; frontend/tests/test_graficos.py; data/casos_teste.csv (duas urgências); README.md e docs/REQUISITOS.md (integrantes,ética,métricas/status); .gitignore ampliado para excluir segredos,bancos ePDFs; novos arquivos em docs/cluster,docs/validacao e docs/videos. Regras de classificação preservadas.

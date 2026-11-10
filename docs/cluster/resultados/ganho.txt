@@ -1,0 +1,4 @@
+T2 = 34.003 s | T4 = 17.006 s
+Redução percentual do tempo: 50.0%
+Razão T2/T4 (speedup): 2.00  (ideal com o dobro de workers: 2,00)
+Eficiência do paralelismo: 100%

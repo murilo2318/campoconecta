@@ -1,0 +1,33 @@
+[
+  {
+    "arquivo": "casos_teste.csv",
+    "casos": 20,
+    "sha256": "a30f98288a5e31aca60d9c58625d76eeae0eee8a59b21723190d8ef24912ed48",
+    "alteracoes": [
+      {
+        "caso": 14,
+        "campo": "urgencia_esperada",
+        "antes": "media",
+        "depois": "baixa"
+      },
+      {
+        "caso": 16,
+        "campo": "urgencia_esperada",
+        "antes": "media",
+        "depois": "baixa"
+      }
+    ]
+  },
+  {
+    "arquivo": "casos_novos.csv",
+    "casos": 20,
+    "sha256": "920d32f009b9111acf3f4dc3b18d9b97bfe5b78b7c18e6b4f359324d37dfe1b0",
+    "alteracoes": []
+  },
+  {
+    "arquivo": "casos_novos_2.csv",
+    "casos": 20,
+    "sha256": "aa4a910eca27bcd0553874ef8bae74460aba8db1a8ea39b53734b36d6564558b",
+    "alteracoes": []
+  }
+]

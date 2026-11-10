@@ -1,0 +1,131 @@
+ViaCEP falhou (1/3) para 18170000: HTTPSConnectionPool(host='viacep.com.br', port=443): Max retries exceeded with url: /ws/18170000/json/ (Caused by NameResolutionError("HTTPSConnection(host='viacep.com.br', port=443): Failed to resolve 'viacep.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+ViaCEP falhou (2/3) para 18170000: HTTPSConnectionPool(host='viacep.com.br', port=443): Max retries exceeded with url: /ws/18170000/json/ (Caused by NameResolutionError("HTTPSConnection(host='viacep.com.br', port=443): Failed to resolve 'viacep.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+ViaCEP falhou (3/3) para 18170000: HTTPSConnectionPool(host='viacep.com.br', port=443): Max retries exceeded with url: /ws/18170000/json/ (Caused by NameResolutionError("HTTPSConnection(host='viacep.com.br', port=443): Failed to resolve 'viacep.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+LLM indisponível, usando regras: LLM não configurado
+ViaCEP falhou (1/3) para 08710000: HTTPSConnectionPool(host='viacep.com.br', port=443): Max retries exceeded with url: /ws/08710000/json/ (Caused by NameResolutionError("HTTPSConnection(host='viacep.com.br', port=443): Failed to resolve 'viacep.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+ViaCEP falhou (2/3) para 08710000: HTTPSConnectionPool(host='viacep.com.br', port=443): Max retries exceeded with url: /ws/08710000/json/ (Caused by NameResolutionError("HTTPSConnection(host='viacep.com.br', port=443): Failed to resolve 'viacep.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+ViaCEP falhou (3/3) para 08710000: HTTPSConnectionPool(host='viacep.com.br', port=443): Max retries exceeded with url: /ws/08710000/json/ (Caused by NameResolutionError("HTTPSConnection(host='viacep.com.br', port=443): Failed to resolve 'viacep.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+LLM indisponível, usando regras: LLM não configurado
+ViaCEP falhou (1/3) para 06950000: HTTPSConnectionPool(host='viacep.com.br', port=443): Max retries exceeded with url: /ws/06950000/json/ (Caused by NameResolutionError("HTTPSConnection(host='viacep.com.br', port=443): Failed to resolve 'viacep.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+ViaCEP falhou (2/3) para 06950000: HTTPSConnectionPool(host='viacep.com.br', port=443): Max retries exceeded with url: /ws/06950000/json/ (Caused by NameResolutionError("HTTPSConnection(host='viacep.com.br', port=443): Failed to resolve 'viacep.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+ViaCEP falhou (3/3) para 06950000: HTTPSConnectionPool(host='viacep.com.br', port=443): Max retries exceeded with url: /ws/06950000/json/ (Caused by NameResolutionError("HTTPSConnection(host='viacep.com.br', port=443): Failed to resolve 'viacep.com.br' ([Errno 8] nodename nor servname provided, or not known)"))
+ViaCEP fora do ar: disjuntor aberto por 60 s
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06890000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06890000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06950000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06890000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06950000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18150000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06700000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06950000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18170000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18150000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06700000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06890000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06890000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06700000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18150000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18170000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06700000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06700000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18150000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08940000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18170000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06890000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06700000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18170000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06890000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08710000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06700000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08940000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08710000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18170000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06950000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 06950000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18170000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18170000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08710000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18150000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 08970000
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 18170000
+LLM indisponível, usando regras: LLM não configurado
+LLM indisponível, usando regras: LLM não configurado
+Disjuntor aberto, ViaCEP ignorado para 00000000
+LLM indisponível, usando regras: LLM não configurado
+Execução concluída: {'status': 'ok', 'processados': 52, 'rejeitados': 3, 'falhas_linha': 0}
+{
+  "inicio": "2026-11-10T10:49:01",
+  "csv": "/Users/mur_benhs/Documents/Codex/2026-11-09/1-conferir-o-pacote-extraia-o/outputs/campoconecta_v2/CampoConecta/data/relatos_sinteticos.csv",
+  "lidos": 55,
+  "processados": 52,
+  "rejeitados": 3,
+  "falhas_linha": 0,
+  "via_llm": 0,
+  "via_regras": 52,
+  "cep_resolvido": 0,
+  "revisao_humana": 36,
+  "email": "/Users/mur_benhs/Documents/Codex/2026-11-09/1-conferir-o-pacote-extraia-o/outputs/campoconecta_v2/CampoConecta/outbox/alerta_20261110_104906.eml",
+  "status": "ok",
+  "erro_fatal": null,
+  "pendencias_para_humano": [
+    "3 linha(s) em /Users/mur_benhs/Documents/Codex/2026-11-09/1-conferir-o-pacote-extraia-o/outputs/campoconecta_v2/CampoConecta/outbox/quarentena.csv"
+  ],
+  "duracao_s": 4.886,
+  "tempo_medio_por_relato_s": 0.094
+}

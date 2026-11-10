@@ -1,0 +1,24 @@
+
+== regras | n=20 | acerto tipo=100% | acerto urgência=95%
+                                                                        texto tipo_esperado   tipo_obtido urgencia_esperada urg_obtida
+o frio de ontem à noite pegou a plantação de banana, as folhas ficaram pretas clima_extremo clima_extremo              alta      media
+
+Matriz de confusão (urgência):
+urg_obtida         alta  baixa  critica  media
+urgencia_esperada                             
+alta                  6      0        0      1
+baixa                 0      4        0      0
+critica               0      0        3      0
+media                 0      0        0      6
+
+== triar (LLM se houver, senão regras) | n=20 | acerto tipo=100% | acerto urgência=95%
+                                                                        texto tipo_esperado   tipo_obtido urgencia_esperada urg_obtida
+o frio de ontem à noite pegou a plantação de banana, as folhas ficaram pretas clima_extremo clima_extremo              alta      media
+
+Matriz de confusão (urgência):
+urg_obtida         alta  baixa  critica  media
+urgencia_esperada                             
+alta                  6      0        0      1
+baixa                 0      4        0      0
+critica               0      0        3      0
+media                 0      0        0      6

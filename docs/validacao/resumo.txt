@@ -1,0 +1,45 @@
+Validação CampoConecta planoA v2 — 10/11/2026
+
+Ambiente: Python3.12.6, venv isolado work/venv_campo.
+Dependências backend/frontend instaladas conforme requirements, sem edição de código.
+.env copiado de .env.example. SMTP, Gemini chave e Gemini modelo vazios.
+
+Backend: 33 passed,1warning in1.99s.
+Aviso: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+Frontend: 7passed in1.67s.
+
+Robô: 55lidos,52processados,3rejeitados,0falhas,36revisão humana.
+Via regras:52; viaLLM:0; CEPs resolvidos:0.
+Execução em ambiente sem rede: ViaCEP teve falha de resolução DNS, retries e disjuntor; lote concluiu.
+Duração:4.886s; média:0.094s/relato. Esta medida é distinta da hipótese histórica0.136s.
+Rejeições: idduplicado3, descriçãovazia id51, datainválida id52.
+SMTP vazio: alerta salvo como.eml; nenhum e-mail externo enviado.
+
+Docker: imagensapi/web compiladas e containers iniciados.
+Rotas:http://localhost:8000/health ->200{"status":"ok"};http://localhost:8501/_stcore/health ->200ok;UI8501 ->200.
+Docker Desktop inicialmente estava parado; após abertura pelo líder, build e inicialização concluíram.
+O executável docker no PATH não estava configurado. Usado plugin Docker Compose empacotado em /Applications/Docker.app/Contents/Resources/cli-plugins/docker-compose.
+Não houve erro de código/build Docker.
+Containers mantidos ativos para o teste de fluxo pelo líder.
+
+LLM: não medido. GEMINI_API_KEY/GEMINI_MODEL não configurados; data/casos_novos_2.csv existe.
+Não executei avaliar.py como se fosse LLM, para não apresentar fallback de regras como medição Gemini.
+
+Atualização após revisão dos rótulos e teste de fluxo
+
+Baselines com GEMINI_API_KEY e GEMINI_MODEL explicitamente vazios:
+casos_teste: n=20; tipo100%; urgência90%.
+casos_novos: n=20; tipo100%; urgência95%.
+casos_novos_2: n=20; tipo55%; urgência30%.
+Os dois blocos emitidos por avaliar.py são ambos regras; não houve medição LLM.
+
+Fluxo Docker API: POST/relatos201; PATCH/relatos/api-0982f5a3/decisao200, aprovado.
+Relato sintético de teste, sem CEP ou dado pessoal real.
+
+Bug de gráfico reproduzido no Docker com histórico contendo datas RPA sem fuso e API UTC:
+AttributeError: Can only use .dt accessor with datetimelike values.
+Correção: frontend/ui/graficos.py usa pd.to_datetime(format="mixed",utc=True,errors="coerce").
+Datas inválidas são ignoradas pelo gráfico temporal, mantendo os relatos nos demais componentes.
+Teste de regressão novo: frontend/tests/test_graficos.py. Falhou antes e passou depois.
+Suite frontend após correção:8passed in1.60s (7originais+1regressão).
+No processo de teste Docker, GESTOR_PIN vazio permite a configuração que os testes existentes esperam; o.env real foi preservado.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE system SYSTEM "iSPD.dtd">
+<system version="1.2">
+ <owner id="user1"/>
+ <cluster id="CampoConecta" nodes="4" power="1000.0" bandwidth="100.0" latency="0.001" scheduler="RoundRobin" owner="user1" master="true">
+  <position x="200" y="150"/><icon_id global="0" local="0"/>
+ </cluster>
+ <load><node application="classificar_relato" owner="user1" id_master="CampoConecta" tasks="500">
+  <size type="computing" minimum="136.0" average="136.0" maximum="136.0" probability="1.0"/>
+  <size type="communication" minimum="0.016" average="0.016" maximum="0.016" probability="1.0"/>
+ </node></load>
+</system>

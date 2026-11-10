@@ -1,0 +1,25 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/*.db
+data/cache_cep.json
+logs/
+outbox/
+relatorio_execucao.json
+
+# documentos-fonte grandes: ficam fora do git (links em metadados.csv; texto anonimizado já está em genai/corpus)
+entregas_externas/pln/entradas/documentos/*.pdf
+entregas_externas/pln/tokenizador_qwen/tokenizer.json
+
+# Proteção antes da publicação pública
+.env*
+!.env.example
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.pdf
+*.class
+.DS_Store

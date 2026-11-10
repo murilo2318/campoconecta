@@ -1,0 +1,1 @@
+{"status":"ok"}okRegressao no container reconstruido: PASS

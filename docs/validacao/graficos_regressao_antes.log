@@ -1,0 +1,17 @@
+.                                                                        [100%]
+1 passed in 1.97s
+graficos.py", line 21, in test_linha_do_tempo_aceita_datas_mistas_e_ignora_invalidas
+    figura = linha_do_tempo(relatos)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/ui/graficos.py", line 31, in linha_do_tempo
+    por_dia = df.groupby(df["criado_em"].dt.date).size().reset_index(name="relatos")
+                         ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/pandas/core/generic.py", line 6434, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/pandas/core/accessor.py", line 231, in __get__
+    return self._accessor(obj)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/pandas/core/indexes/accessors.py", line 883, in __new__
+    raise AttributeError("Can only use .dt accessor with datetimelike values")
+AttributeError: Can only use .dt accessor with datetimelike values. Did you mean: 'at'?

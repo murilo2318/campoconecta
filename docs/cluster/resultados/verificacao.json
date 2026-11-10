@@ -1,0 +1,13 @@
+{
+  "sha256": {
+    "work/ispd/iSPD.jar": "411e1bf4751ec9a6f2e4b450a178f092584bd1ac0a55ece44757ce53cc9808f1",
+    "outputs/campoconecta_v2/CampoConecta/docs/cluster/modelos/cenario_2_workers.imsx": "f6566ca539eff4514d891725b476babade16af6f377fe6559e2eaa01aa92477a",
+    "outputs/campoconecta_v2/CampoConecta/docs/cluster/modelos/cenario_4_workers.imsx": "2eea338da62a696bc5429a6d6fe84399582f84a29516ab2cc43723d57be18c7f",
+    "outputs/campoconecta_v2/CampoConecta/docs/cluster/ExecutarCenarios.java": "0f2cd076cfc94400b9d3560ff6ef98c5c1b6230aaab5b7b84fc5162bf07c85c5"
+  },
+  "tarefas_concluidas_ambos": 500,
+  "diferenca_modelos": "somente nodes=2/4",
+  "speedup": 1.9995272179008003,
+  "reducao_percentual": 49.988177652822955,
+  "eficiencia_percentual": 99.97636089504002
+}
