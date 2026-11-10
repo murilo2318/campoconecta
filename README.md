@@ -52,7 +52,7 @@ flowchart LR
 
 1. **Entrada:** texto e CEP opcional, validados no front e de novo no back-end com Pydantic.
 2. **Processamento:** o front nunca chama o LLM. O back-end anonimiza o texto, consulta o CEP e classifica. O texto original não é gravado.
-3. **Resposta:** cartão com urgência (cor, ícone e texto), tipo, encaminhamento sugerido e aviso quando um caso será conferido por uma pessoa. O produtor avalia se a classificação ajudou.
+3. **Resposta:** cartão com urgência (cor, ícone e texto), tipo, sugestão de encaminhamento (ainda não enviado), protocolo do relato e aviso quando um caso será conferido por uma pessoa. O produtor avalia se a classificação ajudou.
 4. **Ação:** o gestor aprova ou rejeita. O robô monta o e-mail só com os casos aprovados, usando o texto tratado. A anonimização tem limitações; consulte a seção 7.
 
 ## 3. Como rodar
@@ -77,7 +77,7 @@ cd backend && pytest -q && python avaliar.py
 cd frontend && pytest -q
 ```
 
-Com Docker: `docker compose up --build` (API em `localhost:8000`, interface em `localhost:8501`). O build e as verificações de saúde dos dois serviços foram concluídos em **10/11/2026**. O teste do fluxo pela API em Docker foi registrado; a validação pela tela e seus limites estão no [relatório de execução](docs/validacao/RELATORIO_EXECUCAO.md).
+Com Docker: primeiro `cp .env.example .env`, depois `docker compose up --build` (API em `localhost:8000`, interface em `localhost:8501`). O build e as verificações de saúde dos dois serviços foram concluídos em **10/11/2026**. O teste do fluxo pela API em Docker foi registrado; a validação pela tela e seus limites estão no [relatório de execução](docs/validacao/RELATORIO_EXECUCAO.md).
 
 Sem chave de LLM, a triagem usa regras. Para usar o LLM, preencha `GEMINI_API_KEY` e `GEMINI_MODEL` no `.env` (o nome do modelo não é fixado no código porque os modelos mudam).
 

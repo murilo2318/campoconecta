@@ -107,3 +107,13 @@ def test_cep_invalido_preserva_rascunho_sem_mostrar_resultado_anterior(monkeypat
     assert not at.success
     assert at.text_area[0].value == novo
     assert at.text_input[0].value == "123"
+
+
+def test_envio_mostra_protocolo_e_avisa_que_ainda_nao_foi_encaminhado(monkeypatch):
+    """Melhoria ligada ao feedback dos Participantes 1, 2 e 3 (docs/VALIDACAO_FRONT.md)."""
+    at = _app(monkeypatch, listar_relatos=lambda *a, **k: [], criar_relato=lambda d, c: REL)
+    _enviar(at, "Gado morrendo no sítio depois de pastar")
+    assert any("api-1" in s.value for s in at.success)
+    assert any("não foi encaminhado" in i.value for i in at.info)
+    legendas = " ".join(c.value for c in at.caption)
+    assert "Protocolo: api-1" in legendas and "sem inteligência artificial" in legendas

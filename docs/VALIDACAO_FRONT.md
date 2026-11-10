@@ -2,7 +2,7 @@
 
 **Os perfis abaixo NÃO são pessoas reais e NÃO cumprem o requisito de três participantes.**
 
-Data: 10/11/2026. Interface executada em Docker: http://localhost:8501 . Método: automação do navegador pelo agente, em três contextos isolados, identificados como **Perfil de teste 1**, **Perfil de teste 2** e **Perfil de teste 3**. As observações e sugestões são do agente; não são depoimentos de participantes. A coleta com pessoas reais permanece aberta.
+Data: 10/11/2026. Interface executada em Docker: http://localhost:8501 . Método: automação do navegador pelo agente, em três contextos isolados, identificados como **Perfil de teste 1**, **Perfil de teste 2** e **Perfil de teste 3**. As observações e sugestões são do agente; não são depoimentos de participantes. A coleta com pessoas reais está registrada mais abaixo, na seção “Teste com participantes reais”.
 
 Este documento foi criado porque docs/VALIDACAO_FRONT.md não existia. O roteiro de referência era validacao/TESTE_COM_PESSOAS.md.
 
@@ -51,12 +51,30 @@ Reverificação após a revisão dos rótulos e da documentação: **9 testes ap
 
 ## Teste com participantes reais
 
-**Estado: A PREENCHER.** O requisito de três participantes continua aberto. Preencher somente depois de pessoas reais usarem a tela, com suas falas registradas com as palavras delas. Não preencher a tabela com dados ou comentários produzidos pelo agente.
+Em 10/11/2026 três pessoas usaram a tela seguindo o mesmo roteiro: enviar um relato sem CEP, conferir a classificação, tentar de novo com CEP “123” e achar o relato em Meus relatos. As respostas completas, com as palavras dos participantes, estão em [docs/validacao/respostas_participantes.md](validacao/respostas_participantes.md).
 
-| Participante (P1, P2, P3) | Data | Perfil (idade e familiaridade com tecnologia) | Tarefas tentadas | Fala do participante, com as palavras dele | Onde travou | Melhoria pedida |
-|---|---|---|---|---|---|---|
-| P1 | A PREENCHER | A PREENCHER | A PREENCHER | A PREENCHER | A PREENCHER | A PREENCHER |
-| P2 | A PREENCHER | A PREENCHER | A PREENCHER | A PREENCHER | A PREENCHER | A PREENCHER |
-| P3 | A PREENCHER | A PREENCHER | A PREENCHER | A PREENCHER | A PREENCHER | A PREENCHER |
+**Limitações:** os três participantes são os integrantes do trio que faz este trabalho (os três trabalham juntos nos projetos), todos estudantes com muita familiaridade com computador. Por conhecerem o projeto, podem estar menos sujeitos a estranhar a tela do que um usuário novo. Nenhum é produtor rural, então os resultados não mostram a dificuldade de quem tem pouca familiaridade com tecnologia. Os três seguiram o mesmo roteiro de tarefas, por isso os percursos são parecidos.
 
-Após a coleta, implementar uma melhoria rastreável ao feedback e verificar novamente. Somente então atualizar o estado da validação com participantes em docs/PENDENCIAS.md. O ajuste do CEP e os nove testes da execução automatizada não substituem essa coleta.
+| Participante | Data | Perfil | Onde travou ou teve dúvida | O que achou confuso | Melhoria pedida |
+|---|---|---|---|---|---|
+| P1 | 10/11/2026 | Estudante; familiaridade muita | Dúvida sobre prazo de análise e sobre como acompanhar o relato após sair da sessão. O roteiro de instalação não citava a cópia do `.env` | Cabeçalho fala em IA, mas o resultado diz “regras automáticas”; “Encaminhamento sugerido” exige atenção para ver que ainda não houve encaminhamento | Mensagem junto ao status (“registrado, aguarda conferência, ainda não foi encaminhado”), protocolo para guardar, explicar regras automáticas |
+| P2 | 10/11/2026 | Estudante; familiaridade muita | Sem prazo nem forma de receber retorno depois de “Aguardando análise” | A sugestão de encaminhamento pode dar a impressão de que a Secretaria já recebeu o problema | Mensagem de que o relato foi salvo e aguarda conferência antes do encaminhamento; protocolo |
+| P3 | 10/11/2026 | Estudante; familiaridade muita | Dúvida se acharia o relato depois de fechar a página (“Meus relatos nesta sessão”) | Apresentação fala em IA, mas a classificação foi por regras automáticas | Explicar regras automáticas; informar como guardar ou consultar o relato depois |
+
+Pontos que apareceram em mais de um participante: (1) o texto fala em IA, mas a triagem pode ser por regras (P1, P3); (2) não fica claro que o relato ainda não foi encaminhado (P1, P2); (3) falta protocolo e forma de acompanhar depois da sessão (P1, P2, P3). O CEP inválido foi bem compreendido pelos três e a descrição foi mantida.
+
+## Melhoria implementada a partir do feedback
+
+Ligada aos pontos acima:
+
+1. **Protocolo e status (P1, P2, P3):** após o envio, a tela mostra “Relato registrado. Protocolo: …. Guarde este código.” e o aviso “Ainda não foi encaminhado: uma pessoa vai conferir o caso antes de qualquer ação”. O protocolo também aparece em cada cartão.
+2. **Encaminhamento (P1, P2):** o rótulo mudou de “Encaminhamento sugerido” para “Sugestão de encaminhamento (ainda não enviado)”.
+3. **IA ou regras (P1, P3):** o cabeçalho passou a dizer “classificados por inteligência artificial ou por regras automáticas e sempre conferidos por pessoas”, e o cartão diz “regras automáticas (sem inteligência artificial)” quando for o caso.
+4. **Histórico (P1, P3):** Meus relatos avisa que a lista vale só enquanto a página estiver aberta e pede para guardar o protocolo.
+5. **README (P1):** o passo de copiar `.env.example` para `.env` foi incluído na instrução do Docker.
+
+**Não foi implementado:** prazo de análise e consulta do relato por protocolo depois de sair da sessão. A tela não promete isso, porque o sistema ainda não guarda sessões nem tem esse serviço; fica como trabalho futuro.
+
+Verificação: teste novo `test_envio_mostra_protocolo_e_avisa_que_ainda_nao_foi_encaminhado` e suíte do frontend com **10 testes aprovados**.
+
+Estado: coleta com participantes feita (com as limitações acima); resta atualizar a evidência/vídeo do Front com a tela alterada.

@@ -35,7 +35,9 @@ def tela() -> None:
 
     rel = st.session_state.get("ultimo_resultado")
     if rel:
-        st.success("Relato recebido. Veja como ele foi classificado:", icon="✅")
+        st.success(f"Relato registrado. Protocolo: **{rel['id']}**. Guarde este código.", icon="✅")
+        st.info("Ainda **não foi encaminhado**: uma pessoa vai conferir o caso antes de qualquer ação. "
+                "A lista “Meus relatos” só vale enquanto esta página estiver aberta.", icon="⏳")
         cartao_relato(rel, mostrar_fonte_ia=True, chave="ultimo")
         st.write("**A classificação ajudou?** Sua avaliação nos ajuda a corrigir erros.")
         c1, c2, _ = st.columns([1, 1, 3])
