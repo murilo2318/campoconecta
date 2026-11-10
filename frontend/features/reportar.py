@@ -10,7 +10,7 @@ def tela() -> None:
     st.subheader("Relatar um problema")
     st.write("Conte o que está acontecendo, de forma simples. **Não escreva CPF, telefone ou outros dados pessoais**: "
              "nós também mascaramos esses dados, mas é mais seguro não enviar.")
-    with st.form("form_relato", clear_on_submit=True):
+    with st.form("form_relato", clear_on_submit=False):
         descricao = st.text_area("O que está acontecendo? (obrigatório)", max_chars=1000, height=140,
                                  help="Mínimo de 10 caracteres.")
         cep = st.text_input("CEP do local (opcional)", max_chars=9, placeholder="00000-000")
@@ -20,8 +20,10 @@ def tela() -> None:
         digitos = "".join(c for c in cep if c.isdigit())
         if len(" ".join(descricao.split())) < 10:
             st.warning("Descreva o problema com pelo menos 10 caracteres.", icon="✏️")
+            return
         elif cep and len(digitos) != 8:
             st.warning("O CEP precisa ter 8 dígitos. Se não souber, deixe em branco.", icon="✏️")
+            return
         else:
             try:
                 with st.spinner("Analisando seu relato..."):
@@ -29,6 +31,7 @@ def tela() -> None:
                 store.registrar_relato(rel)
             except Exception as e:  # noqa: BLE001 - qualquer falha vira mensagem amigável
                 mostrar_erro(e)
+                return
 
     rel = st.session_state.get("ultimo_resultado")
     if rel:

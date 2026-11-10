@@ -10,7 +10,7 @@ Atualizado em 10/11/2026. Repositório público: https://github.com/murilo2318/c
 - Medir com Gemini se o grupo optar por usar LLM: configurar GEMINI_API_KEY e GEMINI_MODEL e rodar `python avaliar.py casos_novos_2`. Nos requisitos locais, LLM é opcional; confirmar no Portal. Não confundir os resultados atuais de regras com LLM.
 
 ## Front-end
-- Três pessoas reais precisam usar a tela; registrar comentários P1/P2/P3 e perfil, conforme docs/validacao/TESTE_COM_PESSOAS.md.
+- Avaliação automatizada de P1–Murilo, P2–Pedro e P3–Nicolas concluída em docs/VALIDACAO_FRONT.md, com correção de formulário e 9 testes aprovados. A coleta com os participantes ainda precisa ocorrer e ser registrada conforme docs/validacao/TESTE_COM_PESSOAS.md.
 - Implementar pelo menos uma melhoria rastreável a esse feedback e verificar de novo. O conserto técnico de datas não substitui esse requisito.
 - Atualizar a evidência/vídeo após o ajuste, caso o fluxo ou os resultados mudem.
 - Conferir formato dos links e enviar pelo Portal. Vídeo atual:2min52s,sem narração.

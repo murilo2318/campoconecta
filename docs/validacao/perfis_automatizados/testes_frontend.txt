@@ -1,0 +1,6 @@
+Execução local Python 3.12.6, variável GESTOR_PIN vazia apenas no processo de teste.
+Antes da correção, a regressão falhou em assert not at.success: cartão antigo era mostrado após CEP inválido.
+Depois da correção:
+......... [100%]
+9 passed in 2.12s
+Conferência visual na imagem Docker reconstruída: CEP123 e descrição preservados; mensagem de validação exibida; cartão anterior ausente.

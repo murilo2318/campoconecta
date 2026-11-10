@@ -171,3 +171,8 @@ Backend: 33 testes aprovados. Frontend: 8 testes aprovados após corrigir o grá
 
 
 A lista atualizada de entregas ainda necessárias está em [PENDENCIAS.md](docs/PENDENCIAS.md).
+
+
+### Avaliação automatizada do Front por perfis
+
+Foram percorridas três sessões isoladas, P1–Murilo, P2–Pedro e P3–Nicolas, com nomes usados como rótulos de perfil. A execução e as observações são do agente. [Registro da avaliação](docs/VALIDACAO_FRONT.md). Foi corrigida a perda do rascunho em entradas inválidas e a exibição do cartão anterior nessa situação. Frontend: **9 testes aprovados**. A coleta de comentários dos participantes segue pendente; esta avaliação não atribui depoimentos aos integrantes.

@@ -90,3 +90,20 @@ def test_painel_do_gestor_lista_e_decide(monkeypatch):
     aprovar = [b for b in at.button if "Aprovar" in b.label][0]
     aprovar.click().run()
     assert decisoes == [("api-1", "aprovado")]
+
+
+def test_cep_invalido_preserva_rascunho_sem_mostrar_resultado_anterior(monkeypatch):
+    chamadas = []
+    at = _app(monkeypatch, listar_relatos=lambda *a, **k: [],
+              criar_relato=lambda d, c: chamadas.append((d, c)) or REL)
+    _enviar(at, "A bomba quebrou e preciso de assistência para irrigar")
+    assert at.success
+    novo = "O poço secou e preciso de orientação para irrigar a horta."
+    at.text_area[0].input(novo)
+    at.text_input[0].input("123")
+    at.button[0].click().run()
+    assert len(chamadas) == 1
+    assert any("8 dígitos" in w.value for w in at.warning)
+    assert not at.success
+    assert at.text_area[0].value == novo
+    assert at.text_input[0].value == "123"
