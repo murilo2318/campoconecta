@@ -53,7 +53,7 @@ Reverificação após a revisão dos rótulos e da documentação: **9 testes ap
 
 Em 10/11/2026 três pessoas usaram a tela seguindo o mesmo roteiro: enviar um relato sem CEP, conferir a classificação, tentar de novo com CEP “123” e achar o relato em Meus relatos. As respostas completas, com as palavras dos participantes, estão em [docs/validacao/respostas_participantes.md](validacao/respostas_participantes.md).
 
-**Limitações:** os três participantes são os integrantes do trio que faz este trabalho (o Participante 1 é o autor do projeto e os Participantes 2 e 3 são os outros dois membros da equipe), todos estudantes com muita familiaridade com computador. Por conhecerem o projeto, podem estar menos sujeitos a estranhar a tela do que um usuário novo. Nenhum é produtor rural, então os resultados não mostram a dificuldade de quem tem pouca familiaridade com tecnologia. Os três seguiram o mesmo roteiro de tarefas, por isso os percursos são parecidos.
+**Limitações:** os três participantes são os integrantes do trio que faz este trabalho (os três trabalham juntos nos projetos), todos estudantes com muita familiaridade com computador. Por conhecerem o projeto, podem estar menos sujeitos a estranhar a tela do que um usuário novo. Nenhum é produtor rural, então os resultados não mostram a dificuldade de quem tem pouca familiaridade com tecnologia. Os três seguiram o mesmo roteiro de tarefas, por isso os percursos são parecidos.
 
 | Participante | Data | Perfil | Onde travou ou teve dúvida | O que achou confuso | Melhoria pedida |
 |---|---|---|---|---|---|

@@ -1,6 +1,6 @@
 # Respostas dos participantes (teste com pessoas reais)
 
-Respostas dos três integrantes do trio que faz o trabalho (Participante 1 é o autor do projeto; Participantes 2 e 3 são os outros dois membros da equipe), que testaram a tela em 10/11/2026, seguindo o formulário do roteiro. Os nomes foram retirados e os participantes aparecem como Participante 1, 2 e 3. Cada um reescreveu a própria resposta com suas palavras; o conteúdo é o dele. Os três são estudantes com muita familiaridade com computador; nenhum é produtor rural (ver limitações em docs/VALIDACAO_FRONT.md).
+Respostas dos três integrantes do trio que faz o trabalho (os três trabalham juntos nos projetos), que testaram a tela em 10/11/2026, seguindo o formulário do roteiro. Os nomes foram retirados e os participantes aparecem como Participante 1, 2 e 3. Cada um reescreveu a própria resposta com suas palavras; o conteúdo é o dele. Os três são estudantes com muita familiaridade com computador; nenhum é produtor rural (ver limitações em docs/VALIDACAO_FRONT.md).
 
 ## Teste 1 (Participante 1)
 
