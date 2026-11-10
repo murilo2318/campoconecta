@@ -42,11 +42,11 @@ Em aberto: validação com três pessoas e ajuste a partir do feedback; confirma
 |---|---|---|---|
 | Integração com CitizenTech | 2,0 | Demanda de processamento ligada à função de IA, carga coerente e justificada | ✅ Modelos e vínculo com classificação de relatos em `docs/cluster/`; parâmetros declarados como hipóteses |
 | Modelagem no iSPD | 2,0 | Dois cenários, 2 e 4 workers; só o número de workers muda | ✅ Dois cenários executados no iSPD; modelos em `docs/cluster/modelos/` |
-| Resultados quantitativos | 2,0 | Capturas e tabela com tempo total e indicadores por recurso, com unidades | 🟡 Simulações concluídas; conferir consolidação e capturas legíveis em `docs/cluster/` |
-| Análise de desempenho | 3,0 | Comparação crítica, redução percentual, T2/T4, gargalos e limites, sem presumir ganho | 🟡 Resultados calculados; análise e limites no relatório de `docs/cluster/` |
-| Clareza e reprodução | 1,0 | Relatório de 2 a 4 páginas, arquivos do iSPD ou capturas suficientes | 🟡 Modelos disponíveis; conferir versão final do relatório de 2 a 4 páginas em `docs/cluster/` |
+| Resultados quantitativos | 2,0 | Capturas e tabela com tempo total e indicadores por recurso, com unidades | ✅ Tabela e quatro capturas nativas conferidas em `docs/cluster/` |
+| Análise de desempenho | 3,0 | Comparação crítica, redução percentual, T2/T4, gargalos e limites, sem presumir ganho | ✅ Resultados calculados, análise e limites no relatório de `docs/cluster/` |
+| Clareza e reprodução | 1,0 | Relatório de 2 a 4 páginas, arquivos do iSPD ou capturas suficientes | ✅ Modelos, adaptador, capturas e relatório final de quatro páginas; PDF no pacote separado |
 
-O roteiro recebido diz que tamanho computacional e comunicação são hipóteses do modelo, que a carga deve ser a mesma nos dois cenários e que resultado sem ganho pode valer nota integral se bem interpretado. A referência solicitada de 0,136 s por tarefa é uma hipótese de modelagem nesta comparação, não a média atual medida do robô (0,094 s na execução de 10/11/2026).
+O roteiro recebido diz que tamanho computacional e comunicação são hipóteses do modelo, que a carga deve ser a mesma nos dois cenários e que resultado sem ganho pode valer nota integral se bem interpretado. O custo local informado é cerca de 51 µs para anonimização e regras juntas, sem rede, banco e e-mail; mediana de cinco rodadas sobre 60 textos em 2 vCPUs x86_64/Python 3.13, fora do equipamento do grupo. Os resultados do iSPD preservam a carga sintética intensificada de 136 MFlops e não simulam uma calibração de 0,051 MFlops.
 
 ## Parte 2. Matérias em aberto (dos outros integrantes)
 
@@ -78,3 +78,6 @@ Cada pasta em `entregas_externas/` (Visão, IoT, Quântica, Governança) tem um 
 - **GitHub e vídeos:** integrantes/RMs já constam no README; repositório e arquivos de vídeos publicados em https://github.com/murilo2318/campoconecta . Confirmar formato aceito no Portal. As gravações distintas de Front e RPA estão em docs/videos/.
 - **Portal do Aluno:** não houve conferência autenticada nem envio comprovado a RPA, Front ou Cluster. Não marcar entrega concluída sem recibo do Portal.
 - **Fontes do roteiro:** a tabela resume os materiais recebidos no pacote. As exigências específicas de cada professor no Portal prevalecem quando forem conferidas.
+
+
+Atualização Cluster: capturas nativas das abas Global/Results e Resources dos dois cenários incluídas em docs/cluster/resultados/. Tempos conferidos: 34,0034 s e 17,0057 s. O relatório distingue o custo local informado de 51 µs (anonimização e regras) da carga sintética de 136 MFlops usada nos cenários.

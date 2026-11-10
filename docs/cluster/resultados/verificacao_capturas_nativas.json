@@ -1,0 +1,10 @@
+{
+  "adaptador_sha256": "60079e993e0afeece2824e735eba1771c77260b86b3e91062f9ac0aaf46616b9",
+  "capturas": {
+    "docs/cluster/resultados/4_workers/captura_resources_nativa.png": "77498fdc58444ee9e5b6c234f018878f82bed62f87508933882bceb381852e86",
+    "docs/cluster/resultados/4_workers/captura_results_nativa.png": "8c3eccba39b56efaad4909a14a5257b31f4c151b61bef89b793e729276d96d30",
+    "docs/cluster/resultados/2_workers/captura_resources_nativa.png": "f744d78bd045e30e4b094e3b68c324cc194f05969c95b9af78a4acd37fa03ed4",
+    "docs/cluster/resultados/2_workers/captura_results_nativa.png": "7128e16b1fb9c50997a0a6758422fd3e668b38af144ca585943b3e2298eb8b06"
+  },
+  "comparacao_tempos": "resultados JSON nativos idênticos aos históricos para 2 e 4 workers"
+}

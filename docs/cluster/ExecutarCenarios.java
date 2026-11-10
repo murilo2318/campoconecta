@@ -58,7 +58,7 @@ public class ExecutarCenarios {
     html.setTabela(tabela); html.setSatisfacao(new Object[0][0]); html.setCharts(new java.awt.image.BufferedImage[0]);
     html.gerarHTML(destino.toFile());
     if(args.length>2 && args[2].equals("--gui")) {
-      JResultados janela=new JResultados(metricas,rede,tarefas);
+      JResultados janela=new JResultados((java.awt.Window)null,metricas,rede,tarefas,new ispd.arquivo.xml.ConfiguracaoISPD());
       janela.setTitle("iSPD — CampoConecta — "+n+" workers (retorno exato 0.008 Mbit)");
       janela.setModal(false); janela.setVisible(true);
     } else { System.exit(0); }

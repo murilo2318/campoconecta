@@ -10,7 +10,7 @@ Data: 10/11/2026. Base: CampoConecta_planoA_v2.zip fornecido pelo usuário. A v1
 - Frontend após a correção: 8 testes aprovados (7 originais e 1 regressão). A regressão passou também na imagem Docker reconstruída.
 - Docker Compose: build e inicialização reais concluídos. API /health e interface /_stcore/health responderam HTTP 200. Não houve erro de build do projeto; o serviço Docker estava inicialmente desligado e foi iniciado.
 - RPA local sem rede/LLM: 55 linhas lidas, 52 processadas, 3 rejeitadas, 0 falhas de linha; 4,886 s, 0,094 s/relato e 36 casos para revisão humana.
-- RPA na gravação Docker com rede: 52 processadas, 3 rejeitadas, 0 falhas; 29 CEPs resolvidos, 12,149 s e 0,2336 s/relato. ViaCEP recusou outros CEPs e o fluxo continuou. Sem Gemini e sem SMTP; e-mail foi salvo em arquivo, não enviado. Essa medição difere da referência hipotética de 0,136 s usada no Cluster e da execução local sem rede.
+- RPA na gravação Docker com rede: 52 processadas, 3 rejeitadas, 0 falhas; 29 CEPs resolvidos, 12,149 s e 0,2336 s/relato. ViaCEP recusou outros CEPs e o fluxo continuou. Sem Gemini e sem SMTP; e-mail foi salvo em arquivo, não enviado. Essa medição difere da carga sintética intensificada usada no Cluster e da execução local sem rede.
 - Rejeições demonstradas: id duplicado, descrição vazia e data inválida (quarentena).
 - Fluxo visual real: entrada curta rejeitada com mensagem; relato sintético de bomba de irrigação recebido e classificado; acesso ao gestor, comentário e aprovação; filtro Aprovado confirmou o mesmo relato e comentário. Conferência API também retornou201 na criação e200 na aprovação.
 
@@ -28,7 +28,7 @@ Resultados somente com regras, Gemini explicitamente desativado. Não são resul
 
 ## Cluster
 
-Motor oficial iSPD2.0 com adaptador da API pública para o retorno exato0,001 MB.500 tarefas,136 MFlops/tarefa,1000 MFlops/worker,RoundRobin,100 Mbps e 1 ms, todas hipóteses declaradas. Dois workers: 34,003400s,250 tarefas por worker. Quatro: 17,005720s,125 por worker. Redução 49,988178%,speedup 1,999527. Relatório de 4 páginas, fontes, modelos, adaptador, logs, resultados por recurso e capturas das exportações HTML oficiais em ../cluster/. Captura da aba Resources nativa permanece pendente: a janela abriu, mas não foi controlável pela superfície de automação. Não foi apresentada exportação HTML como captura nativa.
+Motor oficial iSPD2.0 com adaptador da API pública para o retorno exato0,001 MB.500 tarefas,136 MFlops/tarefa,1000 MFlops/worker,RoundRobin,100 Mbps e 1 ms, todas hipóteses declaradas. Dois workers: 34,003400s,250 tarefas por worker. Quatro: 17,005720s,125 por worker. Redução 49,988178%,speedup 1,999527. Relatório de 4 páginas, fontes, modelos, adaptador, logs, resultados por recurso e capturas das exportações HTML oficiais em ../cluster/. Capturas nativas de Global/Results e Resources dos dois cenários foram concluídas e conferidas em 10/11/2026; os tempos coincidem com as métricas já registradas.
 
 ## Vídeos locais
 
@@ -43,8 +43,11 @@ Os arquivos estão publicados no repositório GitHub. O Portal ainda precisa ser
 2. Teste com 3 pessoas: usuário confirmou disponibilidade; aguardamos P1/P2/P3 usarem a tela e enviarem comentários. Nenhum feedback foi inventado. O ajuste de datas resolve um bug técnico encontrado na automação e não é apresentado como ajuste derivado desse feedback.
 3. GitHub: publicação autorizada e executada em 10/11/2026 em https://github.com/murilo2318/campoconecta . O acesso ao gh foi validado com rede disponível. Conferência prévia excluiu .env, bancos, PDFs e logs de configuração resolvida.
 4. Portal: login em https://on.fiap.com.br/ pendente; nenhum enunciado privado ou entrega foi conferido/submetido. Prazo informado pelo usuário:19/11 às 23h55; meta interna 18/11. Os requisitos locais não substituem confirmação no Portal.
-5. Capturas nativas Results/Resources do iSPD, conforme o limite acima.
+5. Capturas nativas Results/Resources concluídas, com 34,0034 s e 17,0057 s confirmados.
 
 ## Alterações do projeto
 
 frontend/ui/graficos.py; frontend/tests/test_graficos.py; data/casos_teste.csv (duas urgências); README.md e docs/REQUISITOS.md (integrantes,ética,métricas/status); .gitignore ampliado para excluir segredos,bancos ePDFs; novos arquivos em docs/cluster,docs/validacao e docs/videos. Regras de classificação preservadas.
+
+
+Atualização do custo local informada pelo usuário: o custo de CPU da anonimização e das regras de triagem, sem rede, banco e e-mail, foi de cerca de 51 µs por relato, medido em máquina de 2 vCPUs x86_64 com Python 3.13 (não no equipamento do grupo). Trata-se da mediana de cinco rodadas sobre 60 textos; não foi medido no Mac desta execução. Os cenários de 136 MFlops continuam identificados como carga sintética intensificada, sem atribuí-los ao custo local atual.

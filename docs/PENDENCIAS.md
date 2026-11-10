@@ -14,7 +14,7 @@ Atualizado em 10/11/2026. Repositório público: https://github.com/murilo2318/c
 - Conferir formato dos links e enviar pelo Portal. Vídeo atual:2min52s,sem narração.
 
 ## Cluster
-- Capturar nativamente as abas Results/Resources no iSPD. Os números e as capturas das exportações HTML oficiais já estão incluídos, mas não substituem a captura nativa pedida.
+- Capturas nativas concluídas: Global/Results e Resources de 2 e 4 workers, com tempos conferidos. Resta conferir no Portal e enviar.
 - Conferir no Portal o formato exigido e enviar o relatório PDF de4páginas com os modelos/evidências solicitados.
 
 ## PLN
