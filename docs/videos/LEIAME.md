@@ -1,6 +1,6 @@
-# Gravações
+# Vídeos
 
-Front: front.mp4, 4min45s (1280×720), com narração e legendas, gravado com a tela atual do sistema. RPA: rpa.mp4, 41,975s (1000×950), gravação distinta da execução real e das três rejeições na quarentena. Arquivos reproduzidos e conferidos no navegador. O vídeo do RPA não tem narração. Arquivos publicados neste repositório público. A publicação e eventuais requisitos de apresentação oral devem ser confirmados no Portal.
+Cada disciplina tem um vídeo próprio, com narração e legendas.
 
-- [Front - arquivo público](https://github.com/murilo2318/campoconecta/blob/main/docs/videos/front.mp4)
-- [RPA - arquivo público](https://github.com/murilo2318/campoconecta/blob/main/docs/videos/rpa.mp4)
+- **Front-end:** 4min45s, 1280×720, gravado com a tela atual do sistema. [YouTube](https://youtu.be/YW0gFA5ejas) e [arquivo MP4](https://github.com/murilo2318/campoconecta/blob/main/docs/videos/front.mp4).
+- **RPA:** 4min15s, 1280×720. Mostra a execução do robô, os quatro temas (Pandas, API ViaCEP, SQLite e e-mail), a falha tratada, a idempotência e a medição da triagem. As telas reproduzem saídas reais de execuções do robô em 12/11/2026. [YouTube](https://youtu.be/BdIo3TYCR-k) e [arquivo MP4](https://github.com/murilo2318/campoconecta/blob/main/docs/videos/rpa.mp4).
