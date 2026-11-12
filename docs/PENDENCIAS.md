@@ -12,7 +12,7 @@ Atualizado em 10/11/2026. Repositório público: https://github.com/murilo2318/c
 ## Front-end
 - Teste com três participantes feito em 10/11/2026 e registrado em [docs/VALIDACAO_FRONT.md](VALIDACAO_FRONT.md) e docs/validacao/respostas_participantes.md. Limitação declarada: todos estudantes com muita familiaridade com computador. Se houver tempo, testar com uma pessoa de pouca familiaridade.
 - Melhoria rastreável implementada (protocolo, status “ainda não foi encaminhado”, explicação de regras vs. IA) e 10 testes aprovados.
-- Vídeo do Front regravado com narração e a tela atual (4min45s), publicado em docs/videos/front.mp4.
+- Vídeo do Front regravado com narração e a tela atual (4min45s), publicado em docs/videos/front.mp4 e no YouTube (https://youtu.be/YW0gFA5ejas).
 - Falta: conferir o formato dos links no Portal e enviar.
 
 ## Cluster

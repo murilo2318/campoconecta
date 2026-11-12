@@ -4,7 +4,18 @@ Protótipo da Global Solution 2026.2 (FIAP). O pequeno produtor relata um proble
 
 > **Integrantes:** Pedro Leal Murad — RM565460; Murilo Benhossi — RM562358; Nicolas Lemos Ribeiro — RM553273.
 > **Repositório público:** [https://github.com/murilo2318/campoconecta](https://github.com/murilo2318/campoconecta).
-> **Vídeos de Front e RPA:** gravações locais prontas ([Front](docs/videos/front.mp4) e [RPA](docs/videos/rpa.mp4)); arquivos disponíveis neste repositório, um vídeo por disciplina; confirmar no Portal se esse formato de link é aceito.
+> **Vídeos:** cada disciplina tem o seu vídeo próprio, disponível em duas formas, no YouTube e como arquivo MP4 neste repositório.
+> - Front-end: [YouTube](https://youtu.be/YW0gFA5ejas) · [MP4 no repositório](docs/videos/front.mp4)
+> - RPA: [MP4 no repositório](docs/videos/rpa.mp4) (link do YouTube a incluir, se publicado)
+>
+> **Um repositório, três disciplinas:** este mesmo repositório é entregue em RPA, Front-end em Sistemas de IA e Cluster Computing. Cada disciplina tem material próprio, indicado abaixo, e vídeo e relatório distintos.
+
+| Disciplina | Onde está neste repositório | Entregas próprias |
+|---|---|---|
+| AI for RPA | `backend/rpa_run.py` (ponto de entrada), `backend/app/pipelines/rpa/`, `backend/app/providers/`, seção 4 deste README | Vídeo do RPA, quarentena e relatório de execução em `docs/validacao/` |
+| Front-end em Sistemas de IA | `frontend/` (telas, componentes, estado) e `backend/app/routers/`, seção 5 deste README | Vídeo do Front, [`docs/VALIDACAO_FRONT.md`](docs/VALIDACAO_FRONT.md) e testes do frontend |
+| Cluster Computing | `docs/cluster/` (modelos do iSPD, resultados, parâmetros e relatório) | Relatório em PDF de 4 páginas, modelos `.imsx` e capturas do iSPD |
+
 > **Execução:** Docker local validado; não há deploy público confirmado.
 
 Prazo informado pelo grupo: **19/11/2026 às 23h55**; meta interna: **18/11/2026**. A conferência dos campos e regras de envio no Portal do Aluno ainda está pendente.
