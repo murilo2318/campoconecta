@@ -4,7 +4,7 @@ Protótipo da Global Solution 2026.2 (FIAP). O pequeno produtor relata um proble
 
 > **Integrantes:** Pedro Leal Murad — RM565460; Murilo Benhossi — RM562358; Nicolas Lemos Ribeiro — RM553273.
 > **Repositório público:** [https://github.com/murilo2318/campoconecta](https://github.com/murilo2318/campoconecta).
-> **Vídeos:** [Front](docs/videos/front.mp4) (também no [YouTube](https://youtu.be/YW0gFA5ejas)) e [RPA](docs/videos/rpa.mp4), um vídeo por disciplina.
+> **Vídeos:** [Front](docs/videos/front.mp4) (também no [YouTube](https://youtu.be/YW0gFA5ejas)) e [RPA](docs/videos/rpa.mp4) (também no [YouTube](https://youtu.be/BdIo3TYCR-k)), um vídeo por disciplina.
 > **Execução:** Docker local validado; não há deploy público confirmado.
 
 
@@ -158,7 +158,7 @@ data/ (dados sintéticos)   docs/ (validação, vídeos e kit do Cluster)
 
 - Integrantes e RMs no topo deste arquivo; métricas e limites registrados.
 - Código, testes, modelos do Cluster e vídeos publicados neste repositório.
-- Vídeo do Front: 4min45s, com narração e a tela atual (YouTube e MP4). Vídeo do RPA: arquivo MP4 em `docs/videos/rpa.mp4`.
+- Vídeo do Front: 4min45s, com narração e a tela atual (YouTube e MP4). Vídeo do RPA: 4min15s, com narração (YouTube e MP4 em `docs/videos/rpa.mp4`).
 - Teste com três participantes e melhoria a partir do feedback: feitos (seção 8).
 - Medição com Gemini não foi feita; os resultados acima são só das regras automáticas.
 
