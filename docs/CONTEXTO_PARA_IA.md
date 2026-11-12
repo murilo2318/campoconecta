@@ -33,7 +33,7 @@ cd backend && uvicorn app.main:app --port 8000      # API
 cd frontend && streamlit run app.py                 # interface
 cd backend && python rpa_run.py                     # robô em lote
 cd backend && pytest -q                             # 33 testes
-cd frontend && pytest -q                            # 7 testes
+cd frontend && pytest -q                            # 10 testes
 cd backend && python avaliar.py casos_novos_2       # triagem (casos_teste, casos_novos, casos_novos_2)
 ```
 
@@ -41,8 +41,8 @@ cd backend && python avaliar.py casos_novos_2       # triagem (casos_teste, caso
 | Disciplina | Estado | O que falta |
 |---|---|---|
 | AI for RPA | Pronta no código (Pandas, ViaCEP, SQLite idempotente, e-mail, quarentena, log, disjuntor). Tema rural adaptado | Revisar rótulos dos 60 casos, medir com LLM ligado, demonstrar uma falha tratada no vídeo, texto de ética e ODS. Opcional: scraping de preços |
-| Front-end | Pronta no código (camadas, cache, acessibilidade, Plotly, testes) | Testar Docker (nunca rodou), teste com 3 pessoas e um ajuste, tabela de casos da IA, vídeo (≤5 min), campos `[PREENCHER]` do README |
-| Cluster | Só o kit (`docs/cluster/PARAMETROS.md`, `calcular_ganho.py`) | Modelar no iSPD (2 e 4 workers), capturas, tabela, análise, relatório de 2 a 4 páginas. **Só a pessoa com o iSPD consegue** |
+| Front-end | Pronta no código, Docker testado, teste com 3 participantes feito (10/11/2026) e melhoria implementada (protocolo, status, IA vs regras) | Regravar o vídeo (≤5 min) com a tela nova e enviar no Portal |
+| Cluster | Concluído: modelos .imsx, prints nativos do iSPD (2 e 4 workers), tempos 34,0034 s e 17,0057 s e relatório PDF de 4 páginas | Conferir o formato no Portal e enviar |
 | Visão, IoT, Quântica, Governança | Não iniciadas. Cada pasta de `entregas_externas/` tem um LEIAME com o obrigatório e ideias para o tema rural | Tudo |
 | Generative AI, PLN | Não incluídas nesta versão | Tudo (o Plano B tem uma versão pronta, com tema de enchente, que pode servir de modelo) |
 
