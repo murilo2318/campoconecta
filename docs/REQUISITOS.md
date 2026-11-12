@@ -31,10 +31,10 @@ Em aberto para o grupo: tema de scraping (opcional), uso de LLM real (precisa de
 | Estado, performance, robustez | 1,5 | `session_state`, `st.cache_data`, falhas tratadas, segredos fora do repo, CORS restrito | ✅ | `state/store.py`, `main.py` |
 | UX/UI, acessibilidade, visualização | 2,0 | Layout, latência, cores com texto ou ícone, human-in-the-loop, gráfico Plotly, 2 filtros, componente reutilizável | ✅ | `ui/`, `features/gestor.py` |
 | Deploy e repositório | 1,0 | Deploy público ou Docker, README completo, requirements por serviço, `.env.example` | 🟡 Docker build e saúde da API/interface verificados em 10/11/2026; README atualizado. Repositório público criado e código publicado no GitHub | `docker-compose.yml` |
-| Justificativa, validação, impacto | 1,5 | Problema e público com fonte, 1 ou 2 ODS, decisões técnicas, ética e limites da IA, teste com pelo menos 3 pessoas com um ajuste, tabela com pelo menos 3 casos de teste da IA | 🟡 Problema, decisões, ética e métricas documentados; teste com três pessoas e ajuste motivado por feedback ainda pendentes | |
+| Justificativa, validação, impacto | 1,5 | Problema e público com fonte, 1 ou 2 ODS, decisões técnicas, ética e limites da IA, teste com pelo menos 3 pessoas com um ajuste, tabela com pelo menos 3 casos de teste da IA | 🟡 Problema, decisões, ética e métricas documentados; teste com três participantes e melhoria motivada pelo feedback feitos (docs/VALIDACAO_FRONT.md) | |
 
 Entregáveis: repositório público único, vídeo de até 5 min (demonstração, código, validação, um erro tratado), link no Portal.
-Em aberto: validação com três pessoas e ajuste a partir do feedback; confirmação no Portal do formato dos links dos vídeos próprios já gravados e publicados no repositório. Perfis com autenticação e deploy em plataforma permanecem diferenciais não comprovados. A correção técnica do gráfico de datas não conta como ajuste a partir de feedback humano.
+Feito em 10/11/2026: validação com três participantes (o trio do trabalho, com limitações declaradas em docs/VALIDACAO_FRONT.md) e melhoria a partir do feedback. Em aberto: regravar o vídeo do Front com a tela nova; confirmação no Portal do formato dos links dos vídeos próprios já gravados e publicados no repositório. Perfis com autenticação e deploy em plataforma permanecem diferenciais não comprovados. A correção técnica do gráfico de datas não conta como ajuste a partir de feedback humano.
 
 ### Cluster Computing (10,0 pontos)
 

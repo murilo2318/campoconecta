@@ -118,7 +118,7 @@ Resultados da execução de **10/11/2026**, sobre o v2 e os rótulos revisados. 
 
 ### Testes automatizados e Docker
 
-O backend passou nos **33 testes** existentes. A validação inicial do frontend passou nos **7 testes** existentes, mas o fluxo pela tela revelou um problema no gráfico de datas que esses testes não cobriam. A correção e a contagem final após regressão devem ser consultadas no relatório de execução; os sete testes iniciais não comprovam, sozinhos, que o gráfico funciona. O build Docker e os serviços API/interface saudáveis foram verificados em 10/11/2026.
+O backend passou nos **33 testes** existentes. A validação inicial do frontend passou nos **7 testes** (a suíte do frontend tem hoje **10 testes**, aprovados após a melhoria do protocolo) existentes, mas o fluxo pela tela revelou um problema no gráfico de datas que esses testes não cobriam. A correção e a contagem final após regressão devem ser consultadas no relatório de execução; os sete testes iniciais não comprovam, sozinhos, que o gráfico funciona. O build Docker e os serviços API/interface saudáveis foram verificados em 10/11/2026.
 
 ### Triagem por regras
 
