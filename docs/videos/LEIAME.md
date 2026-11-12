@@ -1,4 +1,4 @@
-# Gravações locais
+# Gravações
 
 Front: front.mp4, 4min45s (1280×720), com narração e legendas, gravado com a tela atual do sistema. RPA: rpa.mp4, 41,975s (1000×950), gravação distinta da execução real e das três rejeições na quarentena. Arquivos reproduzidos e conferidos no navegador. O vídeo do RPA não tem narração. Arquivos publicados neste repositório público. A publicação e eventuais requisitos de apresentação oral devem ser confirmados no Portal.
 

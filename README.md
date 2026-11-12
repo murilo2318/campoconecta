@@ -4,11 +4,9 @@ Protótipo da Global Solution 2026.2 (FIAP). O pequeno produtor relata um proble
 
 > **Integrantes:** Pedro Leal Murad — RM565460; Murilo Benhossi — RM562358; Nicolas Lemos Ribeiro — RM553273.
 > **Repositório público:** [https://github.com/murilo2318/campoconecta](https://github.com/murilo2318/campoconecta).
-> **Vídeos de Front e RPA:** gravações locais prontas ([Front](docs/videos/front.mp4) e [RPA](docs/videos/rpa.mp4)); arquivos disponíveis neste repositório, um vídeo por disciplina; confirmar no Portal se esse formato de link é aceito.
+> **Vídeos:** [Front](docs/videos/front.mp4) (também no [YouTube](https://youtu.be/YW0gFA5ejas)) e [RPA](docs/videos/rpa.mp4), um vídeo por disciplina.
 > **Execução:** Docker local validado; não há deploy público confirmado.
 
-Prazo informado pelo grupo: **19/11/2026 às 23h55**; meta interna: **18/11/2026**. A conferência dos campos e regras de envio no Portal do Aluno ainda está pendente.
-O mapa completo de exigências por matéria está em [`docs/REQUISITOS.md`](docs/REQUISITOS.md).
 
 ## 1. Problema e público
 
@@ -140,39 +138,30 @@ No lote sintético de 55 linhas, o robô processou **52**, rejeitou **3** (ID du
 
 ### Pessoas e Cluster
 
-O teste com três pessoas **ainda aguarda uso real e feedback**. A correção técnica do gráfico de datas não será apresentada como ajuste decorrente de feedback de participantes. O requisito de registrar o que três pessoas disseram e realizar um ajuste a partir disso continua pendente.
+O teste com três participantes foi feito em 10/11/2026 e gerou uma melhoria implementada (protocolo, aviso de que o relato ainda não foi encaminhado e explicação de regras vs. IA). O registro está em [`docs/VALIDACAO_FRONT.md`](docs/VALIDACAO_FRONT.md). Limitação: todos são estudantes com muita familiaridade com computador; nenhum é produtor rural.
 
 Os cenários do iSPD com dois e quatro workers foram executados; os arquivos e resultados estão em [`docs/cluster/`](docs/cluster/). O relatório dessa pasta distingue hipóteses, tempos simulados e limites de extrapolação para a aplicação. Segundo a medição fornecida pelo usuário, **o custo de CPU da anonimização e das regras de triagem, sem rede, banco e e-mail, foi de cerca de 51 µs por relato (0,000051 s), medido em máquina de 2 vCPUs (não no equipamento do grupo)**. Foi usada a mediana de cinco rodadas sobre 60 textos, em x86_64 com Python 3.13; essa medição não foi repetida nesta execução. Os tempos atuais do iSPD, **34,0034 s e 17,0057 s**, pertencem ao cenário sintético de **136 MFlops por tarefa**, não à calibração desse custo real. Com a hipótese de 1.000 MFlops por worker, 51 µs corresponderiam a 0,051 MFlops por tarefa; essa calibração exige novas simulações. O custo informado também não deve ser confundido com a média de 0,094 s do robô completo registrada nesta execução.
 
-## 9. Módulos das outras matérias
+## 9. Módulos de outras matérias
 
-Esta versão cobre só RPA, Front-end e Cluster. Os módulos de Visão e GenAI encaixam como endpoints; os demais são entregas em arquivo dos colegas. Veja `entregas_externas/*/LEIAME.md` e a aba "Módulos" da interface. Sem a entrega, o sistema responde que o módulo ainda não foi integrado e segue funcionando.
+A aba "Módulos" mostra o estado das partes da Global Solution que não pertencem a este repositório. Módulos ainda não integrados aparecem como pendentes e o sistema segue funcionando.
 
 ## 10. Estrutura
 
 ```
 backend/app/{routers,schemas,pipelines,providers,modulos}   backend/rpa_run.py   backend/avaliar.py
 frontend/{features,ui,state,providers}                      frontend/app.py
-data/ (dados sintéticos)   docs/ (requisitos e kit do Cluster)   entregas_externas/ (matérias em aberto)
+data/ (dados sintéticos)   docs/ (validação, vídeos e kit do Cluster)
 ```
 
 ## 11. Situação da entrega
 
-- Integrantes e RMs preenchidos; métricas e limites registrados.
-- Repositório público: publicado em https://github.com/murilo2318/campoconecta. A revisão de arquivos a publicar deve excluir `.env`, bancos `*.db` e PDFs.
-- Vídeos próprios de Front e RPA: gravações distintas prontas (Front com narração); arquivos disponíveis no repositório. O vídeo do Front foi regravado com narração e a tela atual, e tem 4min45s, abaixo do limite de cinco minutos; o do RPA segue sem narração.
-- Teste com três pessoas e ajuste a partir do feedback: pendentes de participação real.
-- Portal do Aluno: requisitos e envio de cada disciplina ainda precisam de conferência na sessão autenticada. Não há comprovação de submissão.
+- Integrantes e RMs no topo deste arquivo; métricas e limites registrados.
+- Código, testes, modelos do Cluster e vídeos publicados neste repositório.
+- Vídeo do Front: 4min45s, com narração e a tela atual (YouTube e MP4). Vídeo do RPA: arquivo MP4 em `docs/videos/rpa.mp4`.
+- Teste com três participantes e melhoria a partir do feedback: feitos (seção 8).
+- Medição com Gemini não foi feita; os resultados acima são só das regras automáticas.
 
+## Execução de 10/11/2026
 
-## Execução atualizada em 10/11/2026
-
-Backend: 33 testes aprovados. Frontend: 8 testes aprovados após corrigir o gráfico de datas mistas. Docker reconstruído e fluxo visual enviado/aprovado. [Relatório consolidado](docs/validacao/RELATORIO_EXECUCAO.md). [Relatório de Cluster](docs/cluster/RELATORIO_CLUSTER.md) (o PDF de quatro páginas acompanha o pacote local e fica fora do Git). [Vídeo Front](docs/videos/front.mp4) e [vídeo RPA](docs/videos/rpa.mp4), gravações distintas sem narração. Gemini, teste com 3 pessoas, conferência/submissão no Portal continuam pendentes. O repositório e os arquivos de vídeo foram publicados no GitHub.
-
-
-A lista atualizada de entregas ainda necessárias está em [PENDENCIAS.md](docs/PENDENCIAS.md).
-
-
-### Execução automatizada com perfis de teste
-
-Foram percorridas três sessões isoladas, Perfil de teste 1, Perfil de teste 2 e Perfil de teste 3, com rótulos de perfil de teste. Os perfis NÃO são pessoas reais e NÃO cumprem o requisito de três participantes. A execução e as observações são do agente. [Registro da avaliação](docs/VALIDACAO_FRONT.md). Foi corrigida a perda do rascunho em entradas inválidas e a exibição do cartão anterior nessa situação. Frontend: **9 testes aprovados**. A coleta de comentários dos participantes segue pendente; esta avaliação não contém depoimentos de participantes.
+Backend: 33 testes aprovados. Frontend: 10 testes aprovados (incluindo a regressão do gráfico de datas e o teste do protocolo). Docker reconstruído e fluxo visual enviado/aprovado. [Relatório consolidado](docs/validacao/RELATORIO_EXECUCAO.md). [Relatório de Cluster](docs/cluster/RELATORIO_CLUSTER.md). [Vídeo Front](docs/videos/front.mp4) e [vídeo RPA](docs/videos/rpa.mp4).
