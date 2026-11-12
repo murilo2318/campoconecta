@@ -160,7 +160,7 @@ data/ (dados sintéticos)   docs/ (requisitos e kit do Cluster)   entregas_exter
 
 - Integrantes e RMs preenchidos; métricas e limites registrados.
 - Repositório público: publicado em https://github.com/murilo2318/campoconecta. A revisão de arquivos a publicar deve excluir `.env`, bancos `*.db` e PDFs.
-- Vídeos próprios de Front e RPA: gravações locais distintas prontas, sem narração; arquivos disponíveis no repositório. Front tem 2min52s, abaixo do limite de cinco minutos.
+- Vídeos próprios de Front e RPA: gravações distintas prontas (Front com narração); arquivos disponíveis no repositório. O vídeo do Front foi regravado com narração e a tela atual, e tem 4min45s, abaixo do limite de cinco minutos; o do RPA segue sem narração.
 - Teste com três pessoas e ajuste a partir do feedback: pendentes de participação real.
 - Portal do Aluno: requisitos e envio de cada disciplina ainda precisam de conferência na sessão autenticada. Não há comprovação de submissão.
 
