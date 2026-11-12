@@ -37,20 +37,23 @@ Motor oficial iSPD2.0 com adaptador da API pública para o retorno exato0,001 MB
 
 Os arquivos estão publicados no repositório GitHub. O Portal ainda precisa ser consultado para confirmar se esse formato de hospedagem/link é aceito.
 
-## Pendências que exigem acesso ou pessoas reais
+## Situação das pendências
 
 1. Gemini: chave e modelo ausentes. A medição com LLM ainda não ocorreu.
-2. Teste com 3 pessoas: usuário confirmou disponibilidade; aguardamos P1/P2/P3 usarem a tela e enviarem comentários. Nenhum feedback foi inventado. O ajuste de datas resolve um bug técnico encontrado na automação e não é apresentado como ajuste derivado desse feedback.
+2. Teste com 3 participantes: realizado em 10/11/2026 e registrado em ../VALIDACAO_FRONT.md, com melhoria implementada a partir do feedback (protocolo, aviso de status e explicação de regras vs. IA). O ajuste de datas dos gráficos é um bug técnico à parte.
 3. GitHub: publicação autorizada e executada em 10/11/2026 em https://github.com/murilo2318/campoconecta . O acesso ao gh foi validado com rede disponível. Conferência prévia excluiu .env, bancos, PDFs e logs de configuração resolvida.
-4. Portal: login em https://on.fiap.com.br/ pendente; nenhum enunciado privado ou entrega foi conferido/submetido. Prazo informado pelo usuário:19/11 às 23h55; meta interna 18/11. Os requisitos locais não substituem confirmação no Portal.
+4. Portal: a conferência dos campos e a submissão são feitas pelo grupo na área do aluno.
 5. Capturas nativas Results/Resources concluídas, com 34,0034 s e 17,0057 s confirmados.
 
 ## Alterações do projeto
 
-frontend/ui/graficos.py; frontend/tests/test_graficos.py; data/casos_teste.csv (duas urgências); README.md e docs/REQUISITOS.md (integrantes,ética,métricas/status); .gitignore ampliado para excluir segredos,bancos ePDFs; novos arquivos em docs/cluster,docs/validacao e docs/videos. Regras de classificação preservadas.
+frontend/ui/graficos.py; frontend/tests/test_graficos.py; data/casos_teste.csv (duas urgências); README.md (integrantes,ética,métricas/status); .gitignore ampliado para excluir segredos,bancos ePDFs; novos arquivos em docs/cluster,docs/validacao e docs/videos. Regras de classificação preservadas.
 
 
 Atualização do custo local informada pelo usuário: o custo de CPU da anonimização e das regras de triagem, sem rede, banco e e-mail, foi de cerca de 51 µs por relato, medido em máquina de 2 vCPUs x86_64 com Python 3.13 (não no equipamento do grupo). Trata-se da mediana de cinco rodadas sobre 60 textos; não foi medido no Mac desta execução. Os cenários de 136 MFlops continuam identificados como carga sintética intensificada, sem atribuí-los ao custo local atual.
 
 
 Atualização Front: avaliação automatizada em três contextos isolados registrada em ../VALIDACAO_FRONT.md, com os rótulos Perfil de teste 1, Perfil de teste 2 e Perfil de teste 3. Envios, triagem, histórico e avaliação foram verificados. A tentativa com CEP inválido apagava o rascunho e apresentava um cartão anterior; o formulário agora preserva os campos e retorna antes desse cartão na tentativa inválida. Regressão reproduziu a falha antes e passou depois; suíte final: 9 passed in 2.12s. Docker reconstruído e nova conferência visual concluída. A classificação de consulta negando urgência ainda deve ser revisada. Os perfis não são pessoas reais e não cumprem o requisito de três participantes. As observações são do agente; a tabela para a coleta com participantes está em ../VALIDACAO_FRONT.md e permanece A PREENCHER.
+
+
+Nota: os logs detalhados do Docker (compose, HTTP, build do web e instalação do pytest) não fazem parte deste repositório; ficam com o grupo e podem ser enviados a pedido.

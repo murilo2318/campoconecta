@@ -2,7 +2,7 @@
 
 Como encaixar um módulo de código: criar o arquivo indicado em `arquivo` com a função
 `funcao`, respeitando o contrato em schemas/modulos.py. Sem o arquivo, o sistema usa o
-stub e continua funcionando. Módulos de documento ou notebook ficam em entregas_externas/.
+stub e continua funcionando.
 """
 import importlib
 from dataclasses import dataclass
@@ -23,22 +23,22 @@ class Slot:
 SLOTS: list[Slot] = [
     Slot("visao", "Visão Computacional", "endpoint",
          "imagem (bytes) -> VisaoSaida {tipo_dano, confianca, caixas[], latencia_ms}",
-         "app.modulos.impl_visao", "analisar", "entregas_externas/visao/"),
+         "app.modulos.impl_visao", "analisar", ""),
     Slot("assistente", "Generative AI", "endpoint",
          "AssistenteEntrada {pergunta, historico} -> AssistenteSaida {resposta, fontes[], abstencao}",
-         "app.modulos.impl_assistente", "perguntar", "entregas_externas/genai/"),
+         "app.modulos.impl_assistente", "perguntar", ""),
     Slot("corpus", "PLN (Fábrica de Corpus)", "arquivos",
          "gera corpus_texto/qa/chat/teste.jsonl; o texto puro pode alimentar o RAG do assistente",
-         pasta="entregas_externas/pln/"),
+         pasta=""),
     Slot("iot", "IoT (OuviAí)", "documento",
          "projeto Edge Impulse no celular; entrega são capturas, tabela de testes e vídeo",
-         pasta="entregas_externas/iot/"),
+         pasta=""),
     Slot("quantica", "Computação Quântica", "documento",
          "roadmap: gargalo real, capacidade quântica escolhida, ética, LGPD e ODS",
-         pasta="entregas_externas/quantica/"),
+         pasta=""),
     Slot("governanca", "Governança em IA e Business Analytics", "documento",
          "vídeo 5 a 7 min, relatório ABNT de 10 a 15 páginas, repositório; consolida todas as matérias",
-         pasta="entregas_externas/governanca/"),
+         pasta=""),
 ]
 
 

@@ -1,8 +1,0 @@
-http://localhost:8000/saude 404 {"detail":"Not Found"}
-http://localhost:8501/_stcore/health 200 ok
-http://localhost:8501 200 <!--
- Copyright (c) Streamlit Inc. (2018-2022) Snowflake Inc. (2022-2026)
-
- Licensed under the Apache License, Version 2.0 (the "License");
- you may n
-http://localhost:8000/health 200 {"status":"ok"}

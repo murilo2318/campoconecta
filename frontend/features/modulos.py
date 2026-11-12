@@ -18,6 +18,6 @@ def tela() -> None:
         return
     df = pd.DataFrame(mods)
     df["Situação"] = df["integrado"].map({True: "✅ Integrado", False: "⏳ Pendente"})
-    st.dataframe(df[["materia", "Situação", "tipo", "pasta"]].rename(
-        columns={"materia": "Matéria", "tipo": "Tipo", "pasta": "Onde entregar"}),
+    st.dataframe(df[["materia", "Situação", "tipo"]].rename(
+        columns={"materia": "Matéria", "tipo": "Tipo"}),
         hide_index=True, width="stretch")
